@@ -1,0 +1,45 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: url('/media/home-img.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #dddbdb;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.logo-link {
+    width: fit-content;
+}
+
+.text-white {
+    color: #dddbdb !important;
+}
+
+/* ----------------------------- Media Queries */
+
+/* Widens Bootstrap container on larger screens */
+/* Sourced from CI Boutique Ado walkthrough project */
+@media (min-width: 1200px) {
+    .container {
+      max-width: 80%;
+    }
+  }
+
+/* Fixed top navbar on medium and larger screens */
+/* Sourced from CI Boutique Ado walkthrough project */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+}
