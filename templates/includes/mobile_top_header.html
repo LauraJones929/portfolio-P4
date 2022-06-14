@@ -1,0 +1,36 @@
+<ul>
+    <li class="list-inline-item dropdown">
+        <a class="text-white nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="text-center">
+                <div><i class="fas fa-running fa-lg"></i></div>
+                <p class="my-0 text-uppercase">My Memberships</p>
+            </div>
+        </a>
+        <div class="dropdown-menu border-0" aria-labelledby="user-options">
+            {% if request.user.is_authenticated %}
+                {% if request.user.is_superuser %}
+                    <a href="{% url 'account_logout' %}" class="dropdown-item text-uppercase">Gym Management</a>
+                {% endif %}
+                <a href="" class="dropdown-item">My Memberships</a>
+                <a href="{% url 'account_logout' %}" class="dropdown-item text-uppercase">Sign Out</a>
+            {% else %}
+                <a href="{% url 'account_signup' %}" class="dropdown-item text-uppercase">Sign Up</a>
+                <a href="{% url 'account_login' %}" class="dropdown-item text-uppercase">Sign In</a>
+            {% endif %}
+        </div>
+    </li>
+    <li class="list-inline-item">
+        <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-white{% endif %} nav-link d-block d-lg-none" href="">
+            <div class="text-center">
+                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                <p class="my-0">
+                    {% if grand_total %}
+                        ${{ grand_total|floatformat:2 }}
+                    {% else %}
+                        $0.00
+                    {% endif %}
+                </p>
+            </div>
+        </a>
+    </li>
+</ul>
