@@ -1,0 +1,34 @@
+[
+    {
+        "pk": 1,
+        "model": "products.category",
+        "fields": {
+            "name": "strength",
+            "friendly_name": "Strength & Conditioning Sessions"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.category",
+        "fields": {
+            "name": "hiit_fitness",
+            "friendly_name": "HIIT Fitness Sessions"
+        }
+    }, 
+    {
+        "pk": 3,
+        "model": "products.category",
+        "fields": {
+            "name": "boxing",
+            "friendly_name": "Boxing Sessions"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.category",
+        "fields": {
+            "name": "expert_coaching",
+            "friendly_name": "Expert Coaching"
+        }
+    }
+]
