@@ -18,6 +18,10 @@ body {
     color: #dddbdb !important;
 }
 
+.bg-black {
+    background: #212121 !important;
+}
+
 /* ----------------------------- Media Queries */
 
 /* Widens Bootstrap container on larger screens */
