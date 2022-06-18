@@ -22,6 +22,32 @@ body {
     background: #212121 !important;
 }
 
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: #212121;
+    z-index: -1;
+}
+
+/* -- Memberships Page --*/
+
+.card {
+    background-color: #837358;
+    margin: 10px;
+}
+
+.card-title, .card-text {
+    background-color: #3c3c3c;
+    padding: 20px;
+}
+
+.org-text {
+    color: #bc8932;
+}
+
 /* ----------------------------- Media Queries */
 
 /* Widens Bootstrap container on larger screens */

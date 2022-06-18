@@ -12,10 +12,35 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container header-container">
+    <!-- Grey background overlay -->
+    <div class="overlay"></div>
+
+    <div class="container-fluid">
         <div class="row">
-            <div class="col">
-                    {{ products }}
+            <div class="col text-center mt-4">
+                    <h2 class="text-white">Memberships</h2>
+                    <hr class="w-50 mb-1">
+            </div>
+        </div>
+        <div class="row">
+            <div class="product-container col-10 offset-1">
+                <div class="row">
+                    {% for product in products %}
+                        <div class="col-sm-12 col-lg-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title org-text text-uppercase text-center">{{ product.name }}</h3>
+                                    <p class="card-text text-center card-price">£{{ product.price }}</p>
+                                    <p class="card-text text-center">{{ product.description }}</p>
+                                    <p class="card-text text-center">
+                                        <a href=""
+                                        class="join-now-btn btn-lg">Join Now</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>
