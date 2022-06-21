@@ -10,8 +10,26 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.navbar-nav {
+    font-size: 20px;
+    text-shadow: #3c3c3c 1px 1px;
+}
+
+.dropdown-menu {
+    background-color: #212121;
+    opacity: 0.8;
+}
+
+.dropdown-item {
+    color: #dddbdb;
+}
+
 .logo-link {
     width: fit-content;
+}
+
+.my-memb {
+    text-shadow: #3c3c3c 1px 1px;
 }
 
 .text-white {
@@ -26,6 +44,12 @@ body {
     position: fixed;
     background: #212121;
     z-index: -1;
+}
+
+.welcome-text {
+    background-color: #212121;
+    opacity: 0.8;
+    padding-top: 20px;
 }
 
 .detail-container {
@@ -44,6 +68,10 @@ hr {
 
 .buttons {
     text-decoration: none;
+}
+
+.transform-btn {
+    border: #dddbdb 1px solid;
 }
 
 /* -- Memberships Page --*/
