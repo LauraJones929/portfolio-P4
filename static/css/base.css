@@ -18,10 +18,6 @@ body {
     color: #dddbdb !important;
 }
 
-.bg-black {
-    background: #212121 !important;
-}
-
 .overlay {
     height: 100%;
     width: 100%;
@@ -32,10 +28,28 @@ body {
     z-index: -1;
 }
 
+.detail-container {
+    float: right;
+    line-height: 40px;
+}
+
+hr {
+    border-top: #dddbdb 1px solid;
+}
+
+.large-font {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.buttons {
+    text-decoration: none;
+}
+
 /* -- Memberships Page --*/
 
 .card {
-    background-color: #837358;
+    background-color: #212121;
     margin: 10px;
 }
 
@@ -46,6 +60,23 @@ body {
 
 .org-text {
     color: #bc8932;
+}
+
+.join-btn {
+    color: #bc8932;
+    background-color: #212121;
+    border: 1px;
+}
+
+.join-btn:hover, .buttons:hover {
+    text-decoration: none;
+    color: #dddbdb;
+}
+
+.buy-btn {
+    background-color: #bc8932;
+    color: #212121;
+    font-weight: 600;
 }
 
 /* ----------------------------- Media Queries */
@@ -61,6 +92,7 @@ body {
 /* Fixed top navbar on medium and larger screens */
 /* Sourced from CI Boutique Ado walkthrough project */
 @media (min-width: 992px) {
+
     .fixed-top-desktop-only {
         position: fixed;
         top: 0;
@@ -71,5 +103,19 @@ body {
 
     .header-container {
         padding-top: 164px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .detail-container, .membership-img {
+        padding-top: 164px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .membership-img {
+        display: none;
     }
 }

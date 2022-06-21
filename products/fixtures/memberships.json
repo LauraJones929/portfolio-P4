@@ -4,8 +4,8 @@
         "model": "products.product",
         "fields": {
             "sku": "pm11223344",
-            "name": "Bronze Membership",
-            "description": "8 Sessions (based on 2 per week) Access To All Sessions. Free On-Site Parking. Sunday-Monday Gym Access. Use Within 1 Month",
+            "name": "Bronze",
+            "description": "8 Sessions (based on 2 per week) Access To All Sessions. Free On-Site Parking. Sunday-Monday Gym Access. Use Within 1 Month.",
             "price": 50.00,
             "category": 1,
             "image_url": "",
@@ -17,8 +17,8 @@
         "model": "products.product",
         "fields": {
             "sku": "pm11223345",
-            "name": "Silver Membership",
-            "description": "12 Sessions (based on 3 per week) Access To All Sessions. Free On-Site Parking. Sunday-Monday Gym Access. Use Within 1 Month",
+            "name": "Silver",
+            "description": "12 Sessions (based on 3 per week) Access To All Sessions. Free On-Site Parking. Sunday-Monday Gym Access. Use Within 1 Month.",
             "price": 60.00,
             "category": 1,
             "image_url": "",
@@ -30,8 +30,8 @@
         "model": "products.product",
         "fields": {
             "sku": "pm11223346",
-            "name": "Gold Membership",
-            "description": "1 Session Every Day Of The Month. Access To All Sessions. Free On-Site Parking. Sunday-Monday Gym Access. Use Within 1 Month",
+            "name": "Gold",
+            "description": "1 Session Every Day Of The Month. Access To All Sessions. Free On-Site Parking. Sunday-Monday Gym Access. Use Within 1 Month.",
             "price": 100.00,
             "category": 1,
             "image_url": "",

@@ -5,7 +5,6 @@
     <div class="container header-container">
         <div class="row">
             <div class="col">
-
             </div>
         </div>
     </div>
@@ -18,7 +17,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col text-center mt-4">
-                    <h2 class="text-white">Memberships</h2>
+                    <h1 class="org-text text-uppercase">Memberships</h2>
                     <hr class="w-50 mb-1">
             </div>
         </div>
@@ -30,11 +29,11 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h3 class="card-title org-text text-uppercase text-center">{{ product.name }}</h3>
-                                    <p class="card-text text-center card-price">£{{ product.price }}</p>
+                                    <p class="card-text text-center card-price large-font">£{{ product.price }}</p>
                                     <p class="card-text text-center">{{ product.description }}</p>
                                     <p class="card-text text-center">
-                                        <a href=""
-                                        class="join-now-btn btn-lg">Join Now</a>
+                                        <a href="{% url 'product_detail' product.id %}"
+                                            class="join-btn btn-lg text-uppercase">Join Now</a>
                                     </p>
                                 </div>
                             </div>
