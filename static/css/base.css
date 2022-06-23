@@ -106,6 +106,14 @@ hr {
     font-weight: 600;
 }
 
+.add_cart {
+    background-color: #212121;
+}
+
+.add_cart:hover {
+    background-color: #3c3c3c;
+}
+
 /* ----------------------------- Media Queries */
 
 /* Widens Bootstrap container on larger screens */
