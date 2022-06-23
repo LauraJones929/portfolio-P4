@@ -91,9 +91,8 @@ hr {
 }
 
 .join-btn {
+    border: #bc8932 1px solid;
     color: #bc8932;
-    background-color: #212121;
-    border: 1px;
 }
 
 .join-btn:hover, .buttons:hover {
