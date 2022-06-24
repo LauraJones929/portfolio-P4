@@ -74,6 +74,18 @@ hr {
     border: #dddbdb 1px solid;
 }
 
+.transform-btn:hover {
+    background-color: #3c3c3c;
+}
+
+.update-link, .remove-item {
+    cursor: pointer;
+}
+
+.update-link:hover {
+    color: #bc8932;
+}
+
 /* -- Memberships Page --*/
 
 .card {
