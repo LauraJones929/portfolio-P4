@@ -42,7 +42,7 @@
                                         <p class="my-0 text-white">£{{ item.product.price }}</p>
                                     </td>
                                     <td class="py-4 w-25">
-                                        <form action="" method="POST" class="form update-form">
+                                        <form action="{% url 'adjust_bag' item.item_id %}" method="POST" class="form update-form">
                                             {% csrf_token %}
                                             <div class="form-group">
                                                 <div class="input-group">
@@ -72,7 +72,6 @@
                                         <a class="update-link org-text"><small>Update</small></a>
                                         <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}">
                                             <small>Remove</small></a>
-                                        <p class="my-0 text-white">{{ item.quantity }}</p>
                                     </td>
                                 </tr>
                             {% endfor %}
@@ -114,7 +113,6 @@
 {% block postloadjs %}
 {{ block.super }}
 {% include 'products/includes/quantity_input_script.html' %}
-{% endblock %}
 
 <script type="text/javascript">
     // Update quantity on click
@@ -128,6 +126,7 @@
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
         var url = `/bag/remove/${itemId}/`;
+        var data = {'csrfmiddlewaretoken': csrfToken};
 
         $.post(url, data)
             .done(function () {
@@ -135,3 +134,4 @@
             });
     });
 </script>
+{% endblock %}
