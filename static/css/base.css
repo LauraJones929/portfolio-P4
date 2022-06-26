@@ -126,10 +126,24 @@ hr {
     background-color: #3c3c3c;
 }
 
+.shopping-cart:hover {
+    color: #dddbdb;
+}
+
+.checkout-sml {
+    border: #bc8932 1px solid;
+    color: #bc8932;
+    background-color: #3c3c3c;
+}
+
+.checkout-sml:hover {
+    color: #dddbdb;
+}
+
 /* -- Toasts -- */
 .message-container {
     position: fixed;
-    top: 72px;
+    top: 80px;
     right: 15px;
     z-index: 99999999999;
     color: #212121;
@@ -143,6 +157,7 @@ hr {
 .toast-capper {
     height: 2px;
 }
+
 
 /* ----------------------------- Media Queries */
 
