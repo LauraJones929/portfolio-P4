@@ -126,6 +126,24 @@ hr {
     background-color: #3c3c3c;
 }
 
+/* -- Toasts -- */
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+    color: #212121;
+}
+
+.custom-toast {
+    overflow: visible;
+    animation-delay: 10s;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
 /* ----------------------------- Media Queries */
 
 /* Widens Bootstrap container on larger screens */
