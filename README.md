@@ -6,12 +6,13 @@
 
 ## Business Objectives
 
-As a gym goer myself, I decided to design and create a website that allows users to access the website in order to find and locate the wide range of memberships that the gym has to offer.
+As a gym goer myself, I decided to design and create a website that allows users to access the website in order to locate and purchase the wide range of memberships that the gym has to offer, as well as signing up to create their own account to manage memberships. The site also allows the owner/business to advertise their brand and keep their membership offers up to date.
 
-The primary focus for this website is to provide a database for the user so that they can view and purchase their own chosen memberships with just a few clicks. Users will also be able to add and delete memberships as they please.
+The primary focus for this website is to provide a database for the user so that they can view and purchase their own chosen memberships with just a few clicks. Users will also be able to add and delete memberships as they please. 
+The owner of the site can update and delete memberships too, in order to advertise their current passes available.
 
 The application is designed to be responsive to all screen sizes and accessible to all users, so that navigation is easy for everyone, no matter what device is being used. My goal is to achieve this with a visually appealing, interactive UX, which encourages users to:
-- 
+- view a wide range of memberships that they are able to purchase in order to join LJ Fitness
 - create/update/delete recipes as they choose
 - share the website with friends and family to encourage them to sign up
 - follow the company's social media platforms to see other users' recipes and ideas
