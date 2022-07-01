@@ -6,20 +6,28 @@
 
 ## Business Objectives
 
-As a gym goer myself, I decided to design and create a website that allows users to access the website in order to locate and purchase the wide range of memberships that the gym has to offer, as well as signing up to create their own account to manage memberships. The site also allows the owner/business to advertise their brand and keep their membership offers up to date.
+As a gym goer myself, I decided to design and create a website that allows users to access the website in order to locate and purchase the wide range of monthly memberships that the gym has to offer, as well as signing up to create their own account to manage memberships. The site also allows the owner/business to advertise their brand and keep their membership offers up to date.
 
 The primary focus for this website is to provide a database for the user so that they can view and purchase their own chosen memberships with just a few clicks. Users will also be able to add and delete memberships as they please. 
 The owner of the site can update and delete memberships too, in order to advertise their current passes available.
 
 The application is designed to be responsive to all screen sizes and accessible to all users, so that navigation is easy for everyone, no matter what device is being used. My goal is to achieve this with a visually appealing, interactive UX, which encourages users to:
-- view a wide range of memberships that they are able to purchase in order to join LJ Fitness
-- create/update/delete recipes as they choose
-- share the website with friends and family to encourage them to sign up
-- follow the company's social media platforms to see other users' recipes and ideas
+- view a wide range of memberships that they are able to purchase in order to join LJ Fitness.
+- purchase as many monthly memberships as they would like.
+- create their own account so they can easily view which memberships they are currently signed up to.
+- share the website with friends and family to encourage them to sign up.
+- follow the company's social media platforms to keep up-to-date with the gym's latest offers and recent activities.
+- contact the owner of the site if they wish to
+
+The owner of the site will be able to:
+- inform visitors of new memberships or classes.
+- promote the wide range of memberships they have to offer.
+- edit or delete memberships.
+- communicate with visitors who have reached out via email.
 
 ## Homepage Mockup
 
-![Mock Up Imagery](/static/images/mockup.jpg)
+![]()
 
 ## User Experience (UX)
 ### User Stories
@@ -27,19 +35,23 @@ The application is designed to be responsive to all screen sizes and accessible 
 
 1. As a first time visitor, I want to understand what the site's purpose is so that I know whether or not I want to explore further.
 
-2. As a first time visitor, I want to be able to easily register so I can access the rest of the site.
+2. As a first time visitor, I want to know as much information as possible about the memberships so I know which is right for me.
+
+3. As a first time visitor, I want to be able to easily register so I can keep track of memberships that I have purchased.
+
+4. As a first time visitor, I would like to be able to contact the owner easily if I have any queries.
 
 **Returning Visitor Goals**
 
-3. As a returning user, I want to upload my favourite recipes and store them so they are easily accessible for another time.
+5. As a returning user, I want to be able to purchase my chosen membership/s with just a few clicks.
 
-4. As a returning user, I want to manage my recipes by creating, updating and deleting them when necessary.
+6. As a returning user, I want to be able to log into my account easily to view and manage my membership/s.
 
 **Frequent Visitor Goals**
 
-5. As a frequent user, I want to be able to follow the company's social media platforms so that I can follow them and share my own recipes with them.
+7. As a frequent user, I want to be able to follow the company's social media platforms so that I can follow them and share my fitness journey, as well as keeping up-to-date with any new activities or offers.
 
-6. As a frequent user, I want to be able to store a large variety of recipes in separate categories, in an organised manner, that are easy to locate when I need them.
+8. As a frequent user, I want to be able to access and manage my profile and memberships.
 
 **Site Owner Goals**
 
