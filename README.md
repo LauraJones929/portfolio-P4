@@ -17,7 +17,7 @@ The application is designed to be responsive to all screen sizes and accessible 
 - create their own account so they can easily view which memberships they are currently signed up to.
 - share the website with friends and family to encourage them to sign up.
 - follow the company's social media platforms to keep up-to-date with the gym's latest offers and recent activities.
-- contact the owner of the site if they wish to
+- contact the owner of the site if they wish to.
 
 The owner of the site will be able to:
 - inform visitors of new memberships or classes.
@@ -55,46 +55,46 @@ The owner of the site will be able to:
 
 **Site Owner Goals**
 
-7. As a site owner, I need to enforce some basic access control when a user is editing or deleting data in order to prevent unauthorised editing or deletion of user uploaded data.
+9. As a site owner, I want to advertise the memberships I have to offer to clients with a clean and organised look.
+
+10. As a site owner, I need to enforce some basic access control when a user is editing or deleting data in order to prevent unauthorised editing or deletion of user uploaded data.
+
+11. As a site owner, I need to provide a safe and secure payment system for my clients.
+
+12. As a site owner, I want to receive email enquiries from clients directly into my inbox.
 
 ## Design
 ### Colour Scheme
 Colour contrast checks were made throughout the process of building the project to save going back and re-doing colours that did not work together.
 
-The main colour scheme is clean and crisp, using different shades of *blue-grey* and *white*, in order to keep the site neutral. The look and feel I wanted to go for was the same look you want to go for with a clean kitchen. People feel most inspired to cook a nice meal when they have a fresh, clean looking kitchen. I wanted that same inspiration throughout the site, and that encourages users to keep their recipes organised.
+The main colour scheme is clean and sharp, using shades of *dark-grey*, *light-grey*, *off-white* and *orange*. The look and feel I wanted to go for was the same first impression you want when you first walk into a gym - sharp, confident and bold.
 
-There are some photographic images throughout, to tie in well with the theme of the site. These images are used on the landing page, and the recipe and category cards.
+There are some photographic images throughout, to tie in well with the theme of the site. These images are used on the landing page, and the *Membership Details* page. The images I chose were selected to inspire potential clients into signing up for the gym.
 
-![Recipe Cards](documentation/images/features/photo.jpg)
+The text throughout the site is either off-white against the dark-grey background, or orange against a grey background, in order to keep the sharp contrast throughout the site.
 
-The text throughout the site is either white against the blue-grey background, or a dark grey/black against a white background, in order to keep the clean, crisp look throughout the site.
+![Landing Imagery](documentation/images/features/landing.jpg)
 
 ### Typography
 
-Fonts are imported into the CSS file via [Google Fonts.](https://fonts.google.com/)
+Fonts are imported into the head of the base.html template via [Google Fonts.](https://fonts.google.com/)
 
-To keep up with the clean and neutral look of the site, I chose to use just one font that is easy and simple to read.
-I have chosen to use the font family of 'Montserrat', with a fallback font of 'san-serif', in the event of the preferred font failing to import. This font will hopefully create a positive user experience when first entering the site as it exudes a professional yet simplistic mood.
+To keep up with the boldness of the site, I chose to use a font that is easy to read, alongside heavy use of uppercase text.
+I have chosen to use the font family of 'Open Sans', with a fallback font of 'san-serif', in the event of the preferred font failing to import. This font will hopefully create a positive user experience when first entering the site as it exudes a professional yet bold approach.
 
-![Monseratt font](documentation/images/features/font.jpg)
+![Open Sans font](documentation/images/features/welcome-text.jpg)
 
 ### Imagery
 
-Photographic imagery is used in some parts of the site, all images are sourced from [Pixabay.](https://pixabay.com/photos/search/)
+Photographic imagery is used in some parts of the site, all images are sourced from [Pixabay](https://pixabay.com/photos/search/) and [Pexels.](https://www.pexels.com/)
 
-The landing page consists of a header, background image and a footer. The image has been slightly darkened and the opacity reduced so that it wasn't too vibrant against the subtle colours of the header and footer.
+The landing page consists of a header, a background image, a welcome message and a footer. The chosen background image was selected because of its subtle tones and lack of contrast against the other elements, as I did not want to distract the site user away from the text.
 
-This image gives the user a good idea of what the site is about upon entering. The appealing image of fresh food should give the user motivation to explore the site further.
+This image gives the user a good idea of what the site is about upon entering.
 
-The Recipes page that contains all of the users' recipes consists of 4 diet specific categories. Each category has a card element containing an image related to that category, e.g. an image of a vegetable curry for the vegetable category.
+The *Membership Details* page contains information and the option to add the selected membership to the users' cart. Alongside the membership information is an image of a lady at the gym, I wanted this to inspire the site user to explore further and motivate them to purchase a membership pass.
 
-The Manage Categories page consists of 4 images for each category, these images are the same for each category for ease which I may change at a later date.
-
-![Various Imagery](/documentation/images/features/imagery.jpg)
-
-***Since writing up the Imagery documentation, I decided to change the background image used on the Landing Page. This was purely down to personal preference and I do think the darker image works better against the white text. See new Landing Page below.***
-
-![New Landing Page Imagery](/static/images/newlanding.jpg)
+![Lady at the gym](/documentation/images/features/membership-details.jpg)
 
 ## Wireframes
 Wireframes for the original design concepts across all devices were created using [Balsamiq.](https://balsamiq.com/wireframes/)
