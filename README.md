@@ -99,74 +99,47 @@ The *Membership Details* page contains information and the option to add the sel
 ## Wireframes
 Wireframes for the original design concepts across all devices were created using [Balsamiq.](https://balsamiq.com/wireframes/)
 
-**Home Page**
+**Landing Page**
 
-The landing page explains the purpose of the site to new and returning users through imagery and subheadings. Functionality is limited from this page as users are only able to register, log-in or visit the company's social media platforms.
+The landing page explains the purpose of the site to new and returning users through imagery and subheadings. From here users are able to sign up/in, contact the site owner, view social media platforms and view the available memberships via a link.
 
-![Home Page Wireframe](/documentation/images/wireframe-imgs/landingpage.jpg)
+![Landing Page Wireframe](/documentation/images/wireframe_imgs/landing.jpg)
 
-**Register Page**
+**Sign-Up/Sign-In Page**
 
-Register page enables the user to create unique log-in credentials based on an alphanumeric Username and alphanumeric Password. Back-end logic tests for duplicate entries and password confirmation.
+ Here users can create unique log-in credentials based on an alphanumeric Username and alphanumeric Password. Back-end logic tests for duplicate entries and password confirmation.
 
-![Register Page Wireframe](/documentation/images/wireframe-imgs/register.jpg)
+![Sign-Up/Sign-In Page Wireframe](/documentation/images/wireframe_imgs/sign-up.jpg)
 
-**Log-in Page**
+**Memberships Page**
 
-For returning users there is a log-in page to enable access to the full functionality of the site.
+Whether a user has signed up or not, they are able to view all memberships that the gym has to offer. Memberships can be filtered down to a specific category, "HIIT Fitness", "Strength & Conditioning", "Boxing" and "View All".
 
-![Log-in Page Wireframe](/documentation/images/wireframe-imgs/login.jpg)
+![Memberships Page Wireframe](/documentation/images/wireframe_imgs/memberships.jpg)
 
-**Profile Page**
+**Membership Details Page**
 
-Upon successful registration or logging in, users are directed to their profile page, consisting of a welcome message that contains the session users' username.
+Here the user is able to view information about the membership as well as being given the option to add the pass to their cart. Upon which they will see a pop up letting them know that they have successfully added the item to their cart. The pop up will contain a button that will direct the user to the checkout page.
 
-![Profile Page Wireframe](/documentation/images/wireframe-imgs/profile.jpg)
+![Membership Details Page Wireframe](/documentation/images/wireframe_imgs/membership-details.jpg)
 
-**Recipe Page**
+**Checkout Page**
 
-The Recipe page is the main attraction/functionality of the site. By retrieving the data from the Mongo database, recipes are displayed by category for the user to access. Users are also able to search and filter recipes by entering a recipe name or diet category.
+Users can view, update and delete their shopping cart contents before they proceed to the payment page.
 
-![Recipes Page Wireframe](/documentation/images/wireframe-imgs/myrecipes.jpg)
+![Checkout Page Wireframe](/documentation/images/wireframe_imgs/checkout.jpg)
 
-**Add Recipe Page**
+**Payment Page**
 
-Users can add a recipe by filling out the following input fields:
+Users are shown a summary of their order details. A form must be filled out containing users' billing details. The user will be given the option to save details in order to make a profile.
 
-- Recipe Name
-- Veggie Safe (on/off switch)
-- Diet Category
-- Cooking Time
-- Cooking Skill Level
-- Serves (how many)
-- Ingredients
-- Method
+![Payment Page Wireframe](/documentation/images/wireframe_imgs/payment.jpg)
 
-![Add a Recipe Page Wireframe](/documentation/images/wireframe-imgs/addrecipe.jpg)
+**My Memberships Page**
 
-**Edit Recipe Page**
+Users are able to view any membership passes that they have previously purchased. *In the future I would like to add another feature to this page that allows the user to see when their pass expires.*
 
-Each recipe has a edit & delete button. By clicking the *edit* button, users are directed to the Edit Recipe page, where all fields hold the value of the already submitted recipe. Users can change the input text as necessary and update to the database.
-
-![Edit a Recipe Page Wireframe](/documentation/images/wireframe-imgs/editrecipe.jpg)
-
-**Manage Categories Page**
-
-This page is restricted to the admin only, where they can choose to create, update or delete diet categories.
-
-![Manage Categories Page Wireframe](/documentation/images/wireframe-imgs/managecategories.jpg)
-
-**Add Category Page**
-
-After clicking the *Add Category* button on the previous page, users can populate the input field with a new category.
-
-![Add Categories Page Wireframe](/documentation/images/wireframe-imgs/addcategory.jpg)
-
-**Edit Diet Category Page**
-
-After clicking the *Edit* button on a specific category card, users can populate the input field with the updated category.
-
-![Edit Category Page Wireframe](/documentation/images/wireframe-imgs/editcategory.jpg)
+![My Memberships Page Wireframe](/documentation/images/wireframe_imgs/my-memberships.jpg)
 
 ## Database schema
 
