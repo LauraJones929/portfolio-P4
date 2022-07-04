@@ -137,7 +137,7 @@ Users are shown a summary of their order details. A form must be filled out cont
 
 **My Memberships Page**
 
-Users are able to view any membership passes that they have previously purchased. *In the future I would like to add another feature to this page that allows the user to see when their pass expires.*
+Users are able to view any membership passes that they have previously purchased. Users can view and update their default billing information also. *In the future I would like to add another feature to this page that allows the user to see when their pass expires.*
 
 ![My Memberships Page Wireframe](/documentation/images/wireframe_imgs/my-memberships.jpg)
 
