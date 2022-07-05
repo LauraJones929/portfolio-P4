@@ -38,8 +38,8 @@
                                     {% if request.user.is_superuser %}
                                         <p class="card-text text-center">
                                             <small class="ml-0">
-                                                <a class="buttons btn-sm org-text" href="">Edit</a> |
-                                                <a class="buttons btn-sm org-text" href="">Delete</a>
+                                                <a class="buttons btn-sm org-text" href="{% url 'edit_product' product.id %}">Edit</a> |
+                                                <a class="buttons btn-sm org-text" href="{% url 'delete_product' product.id %}">Delete</a>
                                             </small>
                                         </p>
                                     {% endif %}
