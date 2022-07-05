@@ -47,7 +47,17 @@ def add_product(request):
     """
     Add a new membership
     """
-    form = ProductForm()
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully added membership!')
+            return redirect(reverse('add_product'))
+        else:
+            messages.error(request, 'Failed to add membership. Please ensure the form is valid.')
+    else:
+        form = ProductForm()
+        
     template = 'products/add_product.html'
     context = {
         'form': form,
