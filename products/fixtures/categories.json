@@ -22,13 +22,5 @@
             "name": "boxing",
             "friendly_name": "Boxing Sessions"
         }
-    },
-    {
-        "pk": 4,
-        "model": "products.category",
-        "fields": {
-            "name": "expert_coaching",
-            "friendly_name": "Expert Coaching"
-        }
     }
 ]

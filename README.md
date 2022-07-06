@@ -141,17 +141,25 @@ Users are able to view any membership passes that they have previously purchased
 
 ![My Memberships Page Wireframe](/documentation/images/wireframe_imgs/my-memberships.jpg)
 
-## Database schema
+## Database schema - Database Django
 
-I used Mongo DB Atlas, a non-relational database to store and retrieve all of the user input data, illustrated below:
+### Categories
 
-![Database](/documentation/images/features/data.jpg)
+1. Strength & Conditioning Sessions
 
-- The *Users* collection stores user data, including a usernsame and password that they will input each time they are required to log in. The username is used to populate the *created by* field in the *Recipes* collection when a user uploads a new recipe.
+2. HIIT Fitness Sessions
 
-- The *Recipes* collection is the largest in the database and stores all user input regarding each recipe, as well as data retrieved from other collections. I included all elements of a recipe that I thought were most relevant for each field.
+3. Boxing Sessions
 
-- The *Categories* collection consists of user input regarding the diet type of that recipe. Which is then injected into the *Recipes* collection as the *diet_name*.
+### Products/Memberships
+
+1. Bronze
+
+2. Silver
+
+3. Gold
+
+
 
 ## Features
 ### Existing Features
