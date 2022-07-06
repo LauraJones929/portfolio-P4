@@ -25,7 +25,15 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 text-center">
+                <form action="{ url 'contact' }" method="POST">
+                    <fieldset></fieldset>
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <div class="form-actions">
+                      <button type="submit">Send</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

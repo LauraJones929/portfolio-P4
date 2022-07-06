@@ -118,6 +118,56 @@
         {% block content %}
         {% endblock %}
 
+        <footer class="footer mt-auto py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 mt-2 text-center text-uppercase timetable welcome-text">
+                        <!--Timetable-->
+                        <h5 class="mb-5 org-text">Timetable</h5>
+                        <ul id="timetable-list">
+                            <li>
+                                <p>Monday & Friday<strong class="org-text"> Fitness</strong>
+                                    Every hour from 6am - 6pm
+                                </p>
+                            </li>
+                            <li>
+                                <p>Tuesday & Thursday<strong class="org-text"> S&C</strong>
+                                    Every hour from 6am - 6pm
+                                </p>
+                            </li>
+                            <li>
+                                <p>Wednesday<strong class="org-text"> Boxing</strong>
+                                    Every hour from 6am - 6pm
+                                </p>
+                            </li>
+                            <li>
+                                <p>Saturday & Sunday<strong class="org-text"> S&C/Fitness</strong>
+                                    Every hour from 6am - 2pm
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Social Media external links-->
+                    <div class="col-12 col-lg-6 mt-2 text-center text-uppercase timetable welcome-text">
+                        <h5 class="mb-5 org-text">Social Media</h5>
+                        <a class="large-font text-white p-4" href="https://www.instagram.com/" target="_blank"><i
+                                class="fab fa-instagram-square"></i></a>
+                        <a class="large-font text-white p-4" href="https://www.facebook.com/" target="_blank"><i
+                                class="fab fa-facebook-square"></i></a>
+                        <a class="large-font text-white p-4" href="https://twitter.com/" target="_blank"><i
+                                class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+    
+            <!--Sub Footer with copyright tag-->
+            <div class="footer-copyright text-center mt-3">
+                <div class="container">
+                    © 2022 Copyright Text
+                </div>
+            </div>
+        </footer>
+
         {% block postloadjs %}
         <script type="text/javascript">
             $('.toast').toast('show');

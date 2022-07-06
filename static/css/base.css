@@ -52,6 +52,11 @@ body {
     padding-top: 20px;
 }
 
+#timetable-list {
+    list-style-type: none;
+    padding: 0;
+}
+
 .detail-container {
     float: right;
     line-height: 40px;
@@ -143,6 +148,15 @@ input[name='q']::placeholder {
 .checkout-sml:hover {
     color: #dddbdb;
 }
+
+/*-- Footer --
+footer {
+    height: 150px;
+}
+
+.social-links {
+    text-align: center;
+} */
 
 /* -- Toasts -- */
 .message-container {

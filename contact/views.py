@@ -1,17 +1,19 @@
 from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
-from django.core.mail import send_mail
-from .forms import ContactForm
+from django.core.mail import send_mail, BadHeaderError
 from django.conf import settings
+from django.http import HttpResponse, HttpResponseRedirect
+
+from .forms import ContactForm
 
 
-# Credit -> https://docs.djangoproject.com/en/4.0/topics/forms/
+# Credit -> https://learndjango.com/tutorials/django-email-contact-form
 def contact(request):
     """View to render contact page"""
-    if request.method == 'POST':
-        # create a form instance and populate it with data from the request:
+    if request.method == 'GET':
+        form = ContactForm()
+    else:
         form = ContactForm(request.POST)
-
         if form.is_valid():
             # process the data in form.cleaned_data as required
             name = form.cleaned_data['name']
@@ -19,23 +21,15 @@ def contact(request):
             subject = form.cleaned_data['subject']
             message = form.cleaned_data['message']
             recipients = [settings.EMAIL_HOST_USER,]
-
-            send_mail(name, subject, message, [recipients])
-            messages.success(
-                request, 'Your message has been sent!')
-            # redirect to contact page
+            try:
+                send_mail(subject, message, email, ['lauraljones19@gmail.com'])
+            except BadHeaderError:
+                return HttpResponse('Invalid header found.')
+            messages.success(request, 'Your message has been sent!')
             return redirect(reverse('contact'))
         else:
             messages.error(
                 request, 'There was a problem sending your message. \
                     Please try again.')
-    else:
-        # Create a blank form
-        form = ContactForm()
+    return render(request, "contact.html", {'form': form})
 
-        template = 'contact.html'
-        context = {
-            'form': form,
-        }
-
-    return render(request, template, context)
