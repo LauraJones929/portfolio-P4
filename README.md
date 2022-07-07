@@ -143,6 +143,8 @@ Users are able to view any membership passes that they have previously purchased
 
 ## Database schema - Database Django
 
+*The database models were created with json fixtures.*
+
 ### Categories
 
 1. Strength & Conditioning Sessions
@@ -200,33 +202,29 @@ Users are able to view any membership passes that they have previously purchased
 | Toasts | Toast messages let users know of their successes and failures throughout the site when performing certain actions. | [Succesfully Added To Cart Toast](/documentation/images/features/toasts.jpg) |
 | Shopping Cart | Users can view their shopping cart which consists of the items added and the grand total price. Users are given the opportunity to increase the quantity, continue shopping or to purchase their items securely. | [Shopping Cart Page](/documentation/images/features/shopping-cart.jpg) |
 | Checkout | A form that allows users to enter their billing details in order to purchase their items securely. Users are given the opportunity to create an account/profile upon completing the form which is saved to the database. | [Checkout Form1](/documentation/images/features/checkout1.jpg) [Checkout Form2](/documentation/images/features/checkout2.jpg) |
-| My Memberships | Displays order history to users and allows users to update billing details. | [My Memberships Page](/documentation/images/features/my-memberships.jpg) |
-| Add Membership | Admin access only. A form that allows superusers and site owners to add a new product/membership which will be added to the database and displayed on the Memberships page. | [Add Membership Form](/documentation/images/features/add-membership.jpg) |
-| Edit Membership | Admin access only. A form that allows superusers and site owners to edit a product/membership which will be updated in the database and displayed on the Memberships page. | [Edit Membership Form](/documentation/images/features/edit-membership.jpg) |
+| My Memberships (CRUD) | Displays order history to users and allows users to update billing details. | [My Memberships Page](/documentation/images/features/my-memberships.jpg) |
+| Add Membership (CRUD) | Admin access only. A form that allows superusers and site owners to add a new product/membership which will be added to the database and displayed on the Memberships page. | [Add Membership Form](/documentation/images/features/add-membership.jpg) |
+| Edit Membership (CRUD) | Admin access only. A form that allows superusers and site owners to edit a product/membership which will be updated in the database and displayed on the Memberships page. | [Edit Membership Form](/documentation/images/features/edit-membership.jpg) |
 | Contact Form | A form that allows users to contact the site owners via email. *The form is not set up to send out real emails but set so that they will be logged in the terminal.* | [Contact Form](/documentation/images/features/contact-form.jpg) |
 
 ### Security Features
 
-Although certain security features were not required for this project I have chosen to implement basic measures to provide some protection against unauthorised access to other users data.
-
-| Feature | Description | Image URL |
-| ------- | ----------- | --------- |
-| User Log-In | A simple username and password is required for registration. Password gets hashed using Password Hash from the Werkzeug Library. | [Log-In Security](/documentation/images/features/login-security.jpg) |
-| Session Cookie | Upon registering or logging in, a unique session cookie is generated for the duration of the users' session. Recipe uploads are saved in the database against the session cookie username. | [Session Cookie](/documentation/images/features/session.jpg) |
-| Restricted Access | Users cannot edit or delete recipes that are not uploaded by them. Only admin users can manage categories. In the Image URL, you can see that only the username of *laurajones* will be able to edit or delete the recipe. | [Restricted Access](/documentation/images/features/access.jpg) | 
-| Password Confirmation | When registering, a password confirmation input field is displayed to ensure the user signing up is genuine. | [Password Confirmation](/documentation/images/features/password-conf.jpg) |
-
-
+| Feature | Description |
+| ------- | ----------- |
+| User Log-In | A simple username and password is required for registration. |
+| Session Cookie | Upon registering or logging in, a unique session cookie is generated for the duration of the users' session. |
+| Restricted Access | Users cannot edit or delete products/memberships. Only admin users can manage products.
 
 ### Features yet to implement
 
 | Feature | Description |
 | ------- | ----------- |
-| Dropdown for all Recipes | At the moment, all recipe names are visible under their category, ready to be selected and dropped down for full visibility. For better organisation, I would like to hide all recipes until the user clicks a drop down button (on the chosen category card) that will reveal all recipes under that category. |
-| Next/Previous button | Incase the *My Recipes* page becomes too crowded once a user has uploaded a lot of recipes, I would like to set a limited amount of recipes that are shown below the category cards, and when that number of recipes is exceeded there is a *next* button that allows the user to skip to the next lot of recipes. |
-| Family accounts | Once I have built up the knowledge required to be able to take the web app further, I would like to provide the opportunity to hold family/household accounts where users of the same family can log into the same account but have their own individual profile that only they can manage. |
-| Profile Management | I would like to add a management system for users to be able edit their profiles and populate elements such as, usernames, profile picture, favourite recipe/food. |
-| Delete confirmation | On developing the website further I would like to add a modal that appears when a user attempts to delete a recipe or category. The modal will ask the user if they are sure that they want to delete, to prevent any accidental deletions.
+| Interactive Timetable | At the moment, the timetable is static and sits in the footer element. I would like to implement an interactive timetable that allows users to select a day and time that they can book onto. |
+| Membership Expiry Date | With each membership being available for 1 month, an expiry date that lets the user know when they can use their membership until would be useful. I would like to learn the functionality that would calculate when the expiry date would be and sends the user a reminder via email when that date is approaching. Viewing the expiry date in the 'My Memberships' page would also be beneficial. |
+| Live Emails | Setting up an email system for the contact form. |
+| Live Stripe Payments | If the site were to go live, a fully functional payment system would be beneficial. |
+| 1 Month Free Trial | Giving the user a month's free trial before signing up. I would need to learn the functionality for this so that the date of the user signing up for a trial calculates when their trial would expire and their payment begins. |
+| Membership Subscriptions | Users would have a rolling payment set up that allowed them to have a fully functional subscription so that they did not have to purchase a new membership each month. |
 
 ## Technologies Used
 ### Languages
@@ -236,78 +234,57 @@ Although certain security features were not required for this project I have cho
 - JavaScript
 
 
-### Libraries/Integrations
+### Libraries/Integrations/Frameworks
 
-- Flask - Flask micro-framework, links with jinja to create the webpages.
+- Django
 
-- Jinja - The project uses the Jinja templating engine.
+- jQuery
 
-- Materialize CSS - Grid system as well as other elements used throughout the site.
+- Jinja
 
-- Hover.css - Used in the Footer to highlight when links are hovered over.
+- Bootstrap
 
-- Google Fonts - Imported via CSS.
+- Hover.css
 
-- Font Awesome - Icons used for social media links as well.
+- Google Fonts
 
-- Balsamiq - Used to create wireframes for the project.
+- Font Awesome
+
+- Balsamiq
 
 ### Database Management System
 
-- MongoDB Atlas
+- Django Database
 
 ### Version Control, Storage & Hosting
 
-- Chrome Dev Tools - Heavily used to fix any spacing issues as well as testing responsivity.
+- Chrome Dev Tools
 
-- Github - To store repositories and codes after being pushed on Gitpod.
+- Github
 
-- Git - Used for version control and tracking changes made to files.
+- Git
 
-- Gitpod - Used for the workspace for this project.
+- Gitpod
 
-- Heroku - Deployment site.
+- Heroku
 
-- Multi Device Mockup Generator (techsini) - To create an image of what the project will look like on various devices. [TechSini.com](http://techsini.com/multi-mockup/index.php)
+- Stripe
 
-- WebAIM Contrast Checker - To test colours throughout the site for whether or not they will produce good user experience.
+- Multi Device Mockup Generator (techsini) - [TechSini.com](http://techsini.com/multi-mockup/index.php)
 
-- W3C Markup Validator - Checks HTML code for errors and warnings.
+- WebAIM Contrast Checker
 
-- W3C CSS Validator - Checks CSS code for errors and warnings.
+- W3C Markup Validator
 
-- JShint - Checks JavaScript code for errors and warnings.
+- W3C CSS Validator
 
-- PEP8 Validator - Checks that the Python code is PEP8 compliant.
+- JShint
+
+- PEP8 Validator
 
 ## Testing
 
 All testing for this project can be found in the [TESTING.md file](TESTING.md).
-
-## Creating the Database
-
-The key features required for this app to function as designed are centred around CRUD interactions with a MongoDB Atlas cloud database management system:
-
-- Create or upload a recipe into the database which can then be viewed by all other registered users.
-- Read or view all of the recipes stored in the database.
-- The list of recipes can be searched by recipe name or category name.
-- Update any of their own recipes, to change any of the previously stored content, or add additional information.
-- Delete recipes they themselves have uploaded. This provides restricted access.
-
-This app is connected to a MongoDB Atlas Cluster. The following steps were used to create the MongoDB Project Database:
-
-1. Register/log-in to MongoDB Atlas.
-2. Create a new project.
-3. Click 'Build a Database'.
-4. Locate the free, 'Shared' database and click 'Create'.
-5. Ensure that you have the 'AWS' Cloud Provider selected, and that you have selected the region closest to you. Ensure that the Cluster Tier is of M0 Sandbox, then click 'Create Cluster'. *See below*.
-
-![Create Database](/documentation/images/testing/createdb.jpg)
-
-6. Create your username and password and ensure that 'My Local Environment' is selected for the network connection.
-7. Add IP Address and allow Access from Anywhere (Not recommended for full production apps).
-8. Once the database is active, you can connect it to Git or whatever version control you are working from.
-9. Click Collections to add a database and start adding documents to your database collections by providing a database name and adding a name for your first collection of documents.
 
 ## Deployment
 
