@@ -372,11 +372,11 @@ You can find the above Mongo_URI value in the appropriate Mongo DB Project under
 
 ## Credits
 
-The content of this website was created by Laura Jones. Snippets of code have been copied from official documentation and other sources credited below. All pre-loaded recipes were taken from various Cookbooks and online recipe sites, which are also credited below.
+The content of this website was created by Laura Jones. Snippets of code have been copied from official documentation and other sources credited below.
 
 ### Code
 
-Much of the structure of this site follows what was taught during the Backend Development - Task Manager walkthrough project provided by Code Institute, but has been modified to suit a recipe database site.
+Much of the structure of this site follows what was taught during the Full Stack Frameworks With Django - Boutique Ado walkthrough project provided by Code Institute, but has been modified to suit my own full stack gym website.
 
 | Code Snippet | Description | Source |
 | ------------- | ----------- | ------ |
@@ -398,9 +398,9 @@ Much of the structure of this site follows what was taught during the Backend De
 
 ## Acknowledgements
 
-- Code Institute - for the video tutorials and providing the knowledge for Python, Flask and some of the different databases structures.
+- Code Institute - for the video tutorials and providing the knowledge for Django and how to use json fixtures.
 
-- Code Institute Tutors - Providing advice on how to run a loop more than once on the same page.
+- Code Institute Tutors - .
 
 - Code Institute Mentor, Spencer Barriball - for the fantastic, professional advice on what makes a good web developer.
 
