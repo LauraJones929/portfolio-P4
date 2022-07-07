@@ -2,6 +2,8 @@ html {
     height: 100%;
 }
 
+/*-- General styling across the site --*/
+
 body {
     background: url('/media/home-img.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -9,6 +11,73 @@ body {
     color: #dddbdb;
     font-family: 'Open Sans', sans-serif;
 }
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: #212121;
+    z-index: -1;
+}
+
+.text-white {
+    color: #dddbdb !important;
+}
+
+hr {
+    border-top: #dddbdb 1px solid;
+}
+
+.large-font {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.org-text {
+    color: #bc8932;
+}
+
+/*-- Buttons --*/
+
+.buttons {
+    text-decoration: none;
+}
+
+.transform-btn {
+    border: #dddbdb 1px solid;
+}
+
+.transform-btn:hover {
+    background-color: #3c3c3c;
+}
+
+.update-link, .remove-item {
+    cursor: pointer;
+}
+
+.update-link:hover {
+    color: #bc8932;
+}
+
+.join-btn {
+    border: #bc8932 1px solid;
+    color: #bc8932;
+}
+
+.join-btn:hover, .buttons:hover {
+    text-decoration: none;
+    color: #dddbdb;
+}
+
+.buy-btn {
+    background-color: #bc8932;
+    color: #212121;
+    font-weight: 600;
+}
+
+/*-- Header --*/
 
 .navbar-nav {
     font-size: 25px;
@@ -32,19 +101,11 @@ body {
     text-shadow: #3c3c3c 1px 1px;
 }
 
-.text-white {
-    color: #dddbdb !important;
+.shopping-cart:hover {
+    color: #dddbdb;
 }
 
-.overlay {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background: #212121;
-    z-index: -1;
-}
+/*-- Landing Page --*/
 
 .welcome-text {
     background-color: #212121;
@@ -55,40 +116,6 @@ body {
 #timetable-list {
     list-style-type: none;
     padding: 0;
-}
-
-.detail-container {
-    float: right;
-    line-height: 40px;
-}
-
-hr {
-    border-top: #dddbdb 1px solid;
-}
-
-.large-font {
-    font-size: 30px;
-    font-weight: 700;
-}
-
-.buttons {
-    text-decoration: none;
-}
-
-.transform-btn {
-    border: #dddbdb 1px solid;
-}
-
-.transform-btn:hover {
-    background-color: #3c3c3c;
-}
-
-.update-link, .remove-item {
-    cursor: pointer;
-}
-
-.update-link:hover {
-    color: #bc8932;
 }
 
 /* -- Memberships Page --*/
@@ -103,28 +130,11 @@ hr {
     padding: 20px;
 }
 
-.org-text {
-    color: #bc8932;
-}
+/*-- Membership Details Page --*/
 
-.join-btn {
-    border: #bc8932 1px solid;
-    color: #bc8932;
-}
-
-.join-btn:hover, .buttons:hover {
-    text-decoration: none;
-    color: #dddbdb;
-}
-
-.buy-btn {
-    background-color: #bc8932;
-    color: #212121;
-    font-weight: 600;
-}
-
-input[name='q']::placeholder {
-    color: #3c3c3c;
+.detail-container {
+    float: right;
+    line-height: 40px;
 }
 
 .add_cart {
@@ -135,7 +145,15 @@ input[name='q']::placeholder {
     background-color: #3c3c3c;
 }
 
-.shopping-cart:hover {
+/*-- Shopping Cart --*/
+
+.checkout-sml {
+    border: #bc8932 1px solid;
+    color: #bc8932;
+    background-color: #3c3c3c;
+}
+
+.checkout-sml:hover {
     color: #dddbdb;
 }
 
@@ -149,16 +167,14 @@ input[name='q']::placeholder {
     color: #dddbdb;
 }
 
-/*-- Footer --
-footer {
-    height: 150px;
+/*-- Forms --*/
+
+input[name='q']::placeholder {
+    color: #3c3c3c;
 }
 
-.social-links {
-    text-align: center;
-} */
-
 /* -- Toasts -- */
+/*-- Credits to Code Institute Boutique Ado Walkthrough project --*/
 .message-container {
     position: fixed;
     top: 80px;
@@ -177,6 +193,7 @@ footer {
 }
 
 /* Allauth form formatting */
+/*-- Credits to Code Institute Boutique Ado Walkthrough project --*/
 
 .allauth-form-inner-content p {
     margin-top: 1.5rem;
