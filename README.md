@@ -288,7 +288,7 @@ All testing for this project can be found in the [TESTING.md file](TESTING.md).
 
 ## Deployment
 
-This project was created using Gitpod, which enabled me to stage and commit the files via Git (version control). ll of the files necessary to run this website have been stored in a GitHub repository.
+This project was created using Gitpod, which enabled me to stage and commit the files via Git (version control). All of the files necessary to run this website have been stored in a GitHub repository. The site was deployed using Heroku *(see below*).
 
 ### Forking the GitHub repository
 
