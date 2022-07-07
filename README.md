@@ -159,26 +159,51 @@ Users are able to view any membership passes that they have previously purchased
 
 3. Gold
 
+### Products/Memberships - Details
+
+- Sku
+- Name
+- Description
+- Price
+- Category
+
+## Apps
+1. Milestone_4 -  the project level app.
+
+2. Bag -  the user is able to place products/memberships into their cart.
+
+3. Checkout - the user is able to purchase said products via Stripe.
+
+4. Contact - the user is able to contact the site owner via email.
+
+5. Home - the landing page and anchor point allows users to navigate the site easily.
+
+6. Products - the user is able to browse memberships and the site owner is able to add/update/delete memberships.
+
+7. Profiles - the user can create their own profile and manage their memberships.
+
 
 
 ## Features
 ### Existing Features
 | Feature | Description | Image URL |
 | ------- | ----------- | --------- |
-| Landing | Landing page to convey the purpose of the website to new and returning users. | [Landing Page](/static/images/newlanding.jpg) |
-| Header | Logo and nav bar allow user to navigate through the site with ease. Burger icon displays on smaller devices. | [Header](/documentation/images/features/header.jpg) |
-| Footer | Sign up option and social media icons direct the user to the company's social media platforms. | [Footer](/documentation/images/features/footer.jpg) |
-| Register | Provides the opportunity for new users to sign-up quickly and efficiently. | [Registration Page](/documentation/images/features/register.jpg) |
-| Log-In | Provides the opportunity for returning users to log-in quickly. | [Log-In Page](/documentation/images/features/log-in.jpg) |
-| Profile Page | Users are directed to a welcome message displaying their username. | [Profile Page](/documentation/images/features/profile.jpg) |
-| Recipes | Page where all users' recipes are displayed. | [Recipes Page](/documentation/images/features/recipes.jpg) |
-| Recipe Search | Users can text search for a recipe using the recipe name or diet category. | [Recipe Search](/documentation/images/features/recipe-search.jpg) |
-| Drop Down Recipes | Recipes are organised with dropdown select elements. Users select/drop the recipe they want to view. | [Dropdown Recipe](/documentation/images/features/dropdown.jpg) |
-| Add Recipe | Users can create and upload a recipe to their database. | [Add Recipe](/documentation/images/features/add-recipe.jpg) |
-| Edit Recipe | Enables users to modify all of the fields for any of the recipes they uploaded. Original data is uploaded from the database into the value fields until the user modifies. | [Edit Recipe](/documentation/images/features/edit-recipe.jpg) |
-| Delete Recipe | Allows user to delete a recipe that they have uploaded. | [Delete Recipe](/documentation/images/features/delete.jpg) |
-| Manage Categories | Admin access only. Admin has the ability to create, update or delete diet categories. | [Manage Categories Page](/documentation/images/features/manage-cat.jpg) |
-| Log-Out | Logs user out and clears session | [Log Out](/documentation/images/features/logout.jpg) |
+| Landing | Landing page to convey the purpose of the website to new and returning users. | [Landing Page](/documentation/images/features/landing.jpg) |
+| Welcome Message | A section on the landing page that welcomes the user to the LJ Fitness website. Contains a button that directs user to the Memberships page. | [Welcome](/documentation/images/features/welcome-text.jpg) |
+| Header | Logo, nav bar and shopping cart allow users to navigate through the site with ease. Burger icon displays on smaller devices. | [Header](/documentation/images/features/header.jpg) |
+| Footer | Gym timetable is displayed and social media icons direct the user to the company's social media platforms. | [Footer](/documentation/images/features/footer.jpg) |
+| Sign Up | Provides the opportunity for new users to sign-up quickly and efficiently. | [Sign Up Form](/documentation/images/features/sign-up.jpg) |
+| Sign In | Provides the opportunity for returning users to log-in quickly. | [Sign In Form](/documentation/images/features/sign-in.jpg) |
+| Password Reset | Allows users to reset their password in the event of a forgotten password. | [Password Reset Page](/documentation/images/features/password-reset.jpg) |
+| Memberships | Displays all memberships that the gym has to offer. These can be filtered by category via the nav bar by selecting 'Memberships' and clicking on their chosen category. Users can click the 'Join Now' button to view full details with an option to add to cart. | [Memberships Page](/documentation/images/features/memberships.jpg) |
+| Membership Details | Full details about the selected membership is displayed. Users are given the option to add this item to their cart via the 'Add To Cart' button, as well as increasing the quantity of the item. | [Membership Details Page](/documentation/images/features/membership-details.jpg) |
+| Toasts | Toast messages let users know of their successes and failures throughout the site when performing certain actions. | [Succesfully Added To Cart Toast](/documentation/images/features/toasts.jpg) |
+| Shopping Cart | Users can view their shopping cart which consists of the items added and the grand total price. Users are given the opportunity to increase the quantity, continue shopping or to purchase their items securely. | [Shopping Cart Page](/documentation/images/features/shopping-cart.jpg) |
+| Checkout | A form that allows users to enter their billing details in order to purchase their items securely. Users are given the opportunity to create an account/profile upon completing the form which is saved to the database. | [Checkout Form1](/documentation/images/features/checkout1.jpg) [Checkout Form2](/documentation/images/features/checkout2.jpg) |
+| My Memberships | Displays order history to users and allows users to update billing details. | [My Memberships Page](/documentation/images/features/my-memberships.jpg) |
+| Add Membership | Admin access only. A form that allows superusers and site owners to add a new product/membership which will be added to the database and displayed on the Memberships page. | [Add Membership Form](/documentation/images/features/add-membership.jpg) |
+| Edit Membership | Admin access only. A form that allows superusers and site owners to edit a product/membership which will be updated in the database and displayed on the Memberships page. | [Edit Membership Form](/documentation/images/features/edit-membership.jpg) |
+| Contact Form | A form that allows users to contact the site owners via email. *The form is not set up to send out real emails but set so that they will be logged in the terminal.* | [Contact Form](/documentation/images/features/contact-form.jpg) |
 
 ### Security Features
 
