@@ -317,9 +317,24 @@ As this is a full-stack website it has been deployed to Heroku.com using the fol
 
 ### Heroku Deployment
 
-1. In the "Deployment Method" section, select Github. Locate the Connect to GitHub section below.
-2. Your Github profile should be displayed, if not type in your GitHub username.
-3. Select the corresponding repository, and click "Connect".
+1. In the *Resources* tab, select *Add-Ons* and search for *Heroku Postgres*. Click *Submit Order Form*.
+2. In the Gitpod terminal, type:
+    - `pip3 install dj_database_url`
+    - `pip3 install psycopg2-binary`
+    - ` pip3 freeze > requirements.txt `
+3. In *settings.py*, type `import dj_database_url` underneath `import os`.
+4. Still in *settings.py*, comment out the current `DATABASE` and underneath type `DATABASES = {
+    'default': dj_database_url.parse(url)
+}`
+5. Retrieve your config vars url from the Heroku settings and place in the url parameter in the previous step.
+6. In the terminal, make migrations using `python3 manage.py migrate`.
+7. Using fixtures, all product data is imported by typing the following:
+    - `python3 manage.py loaddata categories`
+    - `python3 manage.py loaddata memberships`
+8. Create a superuser log in - `python3 manage.py create superuser`.
+9. Remove the new `DATABASE` that was created in step 4, and uncomment the original `DATABASE`.
+
+
 
 Configuration settings and secret keys are needed for this app, which Heroku requires in order for the website to function as desired. To do this you need to set the Config Vars within Heroku:
 
