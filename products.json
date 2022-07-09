@@ -1,8 +1,29 @@
-[ {
+[{
+    "model": "products.category",
+    "pk": 1,
+    "fields": {
+        "name": "strength",
+        "friendly_name": "Strength & Conditioning Sessions"
+    }
+}, {
+    "model": "products.category",
+    "pk": 2,
+    "fields": {
+        "name": "hiit_fitness",
+        "friendly_name": "HIIT Fitness Sessions"
+    }
+}, {
+    "model": "products.category",
+    "pk": 3,
+    "fields": {
+        "name": "boxing",
+        "friendly_name": "Boxing Sessions"
+    }
+}, {
     "model": "products.product",
     "pk": 1,
     "fields": {
-        "category": 2,
+        "category": 1,
         "sku": "pm11223344",
         "name": "Hiit Fitness Part Timer",
         "description": "Access to 8 HIIT Fitness Sessions (Based On 2 Per Week) Free On-Site Parking. Sunday-Monday Gym Access. Use Within 1 Month.",
@@ -10,7 +31,7 @@
         "image_url": null,
         "image": ""
     }
-    }, {
+}, {
     "model": "products.product",
     "pk": 2,
     "fields": {
@@ -22,11 +43,11 @@
         "image_url": null,
         "image": ""
     }
-    }, {
+}, {
     "model": "products.product",
     "pk": 3,
     "fields": {
-        "category": 3,
+        "category": 1,
         "sku": "pm11223346",
         "name": "Boxing Part Timer",
         "description": "Access to 8 S&C Sessions (Based On 2 Per Week) Free On-Site Parking. Sunday-Monday Gym Access. Use Within 1 Month.",
@@ -34,7 +55,7 @@
         "image_url": null,
         "image": ""
     }
-    }, {
+}, {
     "model": "products.product",
     "pk": 4,
     "fields": {
@@ -46,7 +67,7 @@
         "image_url": null,
         "image": ""
     }
-    }, {
+}, {
     "model": "products.product",
     "pk": 5,
     "fields": {
@@ -58,7 +79,7 @@
         "image_url": null,
         "image": ""
     }
-    }, {
+}, {
     "model": "products.product",
     "pk": 6,
     "fields": {
@@ -70,7 +91,7 @@
         "image_url": null,
         "image": ""
     }
-    }, {
+}, {
     "model": "products.product",
     "pk": 7,
     "fields": {
@@ -82,7 +103,7 @@
         "image_url": null,
         "image": ""
     }
-    }, {
+}, {
     "model": "products.product",
     "pk": 8,
     "fields": {
@@ -94,7 +115,7 @@
         "image_url": null,
         "image": ""
     }
-    }, {
+}, {
     "model": "products.product",
     "pk": 9,
     "fields": {
