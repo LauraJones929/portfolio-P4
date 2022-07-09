@@ -276,6 +276,9 @@ input[name='q']::placeholder {
     .detail-container, .membership-img {
         padding-top: 164px;
     }
+    .header-container {
+        padding-top: 100px;
+    }
 }
 
 @media (max-width: 768px) {
