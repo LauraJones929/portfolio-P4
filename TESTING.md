@@ -8,59 +8,73 @@ Most testing was carried out via Google Chrome browser and Chrome Dev Tools for 
 | ------- | ----------- | --------- |
 | 1 | "As a first time visitor, I want to understand what the site's purpose is so that I know whether or not I want to explore further." | Upon entering the site, the user is directed straight to the landing page where a clear explanation of the app's purpose with both text and imagery. |
 
-![Landing Page](/documentation/images/testing/landing.jpg)
+![Landing Page](/documentation/images/features/landing.jpg)
 
 | User Story | Description | Testing |
 | ------- | ----------- | --------- |
-| 2 | "As a first time visitor, I want to be able to easily register so I can access the rest of the site." | Registration is quick and simple, requiring the user to provide a valid username, email-address and password. |
+| 2 | "As a first time visitor, I want to know as much information as possible about the memberships so I know which is right for me." | Users can view all memberships or choose to filter a search to show a specific category. Users can see which days each class is available on, along with price and parking facilities. |
 
-![Registration](/documentation/images/testing/register.jpg)
-
-| User Story | Description | Testing |
-| ------- | ----------- | --------- |
-| 3 | "As a returning user, I want to upload my favourite recipes and store them so they are easily accessible for another time." | Registered users are able to create, upload and store their recipes in an organised manner. A search bar is displayed at the top of the *Recipes* page for a quick way to find a specific recipe. |
-
-![Add a recipe](/documentation/images/testing/add-recipe.jpg)
-
-![A recipe](/documentation/images/testing/dropdown.jpg)
-
-![Search bar](/documentation/images/testing/search.jpg)
+![Memberships](/documentation/images/features/memberships.jpg)
 
 | User Story | Description | Testing |
 | ------- | ----------- | --------- |
-| 4 | "As a returning user, I want to manage my recipes by creating, updating and deleting them when necessary." | Once a recipe has been created, users are able to edit and delete a recipe as they wish. |
+| 3 | "As a first time visitor, I want to be able to easily register so I can keep track of memberships that I have purchased." | Registration is quick and simple, requiring the user to provide a valid username, email-address and password. Users are then able to view their order history/memberships they have purchased. |
 
-![Edit or Delete a Recipe](/documentation/images/testing/access.jpg)
+![Registration](/documentation/images/features/sign-up.jpg)
 
-![Edit a recipe](/documentation/images/testing/edit-recipe.jpg)
-
-| User Story | Description | Testing |
-| ------- | ----------- | --------- |
-| 5 | "As a frequent user, I want to be able to follow the company's social media platforms so that I can follow them and share my own recipes with them." | Social Media icons provide a link to the company's social media platform. These are visible at all times in the Footer. |
-
-![Social Media links](/documentation/images/testing/footer.jpg)
+![My Memberships](/documentation/images/features/my-memberships.jpg)
 
 | User Story | Description | Testing |
 | ------- | ----------- | --------- |
-| 6 | "As a frequent user, I want to be able to store a large variety of recipes in separate categories, in an organised manner, that are easy to locate when I need them." | When uploading a recipe to the database, the user must select what diet category their recipe belongs to. This will then store that recipe in the correct category showing on the site. Categories are also searchable in the Search bar. |
+| 4 | "As a first time visitor, I would like to be able to contact the owner easily if I have any queries." | Users are able to fill out a contact form that is sent to the site owners' inbox. *(Not live)* |
 
-![Vegetarian & Vegan Categories](/documentation/images/testing/veggievegan.jpg)
-
-![Meat & Pesce Categories](/documentation/images/testing/recipes.jpg)
-
-![Search Pescetarian](/documentation/images/testing/searchcategory.jpg)
-
-![Pescetarian Recipes](/documentation/images/testing/searchcategory2.jpg)
-
-*When the category name 'Pescetarian' was searched, only the recipes in the Pescetarian category was shown.*
+![Contact Form](/documentation/images/features/contact-form.jpg)
 
 | User Story | Description | Testing |
 | ------- | ----------- | --------- |
-| 7 | "As a site owner, I need to enforce some basic access control when a user is editing or deleting data in order to prevent unauthorised editing or deletion of user uploaded data." | Users can only *edit* or *delete* a recipe that they themselves have uploaded. |
+| 5 | "As a returning user, I want to be able to purchase my chosen membership/s with just a few clicks." | Users can add a chosen membership to their cart, they are then given the option to view their shopping cart via a button in the *Successful toast message*. Users can then update their cart or go straight to checkout, fill out billing information and are able to purchase their membership securely and safely via Stripe payments. |
 
-![No access to edit](/documentation/images/testing/noaccess.jpg)
+![Go To Checkout](/documentation/images/testing/purchase1.jpg)
 
-*The edit and delete button does not show.*
+| User Story | Description | Testing |
+| ------- | ----------- | --------- |
+| 6 | "As a returning user, I want to be able to log into my account easily to view and manage my membership/s." | Users can log in securely and go to the *My Memberships* page to view their order history. |
+
+![Log In](/documentation/images/features/sign-in.jpg)
+
+![My Memberships](/documentation/images/features/my-memberships.jpg)
+
+| User Story | Description | Testing |
+| ------- | ----------- | --------- |
+| 7 | "As a frequent user, I want to be able to follow the company's social media platforms so that I can follow them and share my fitness journey, as well as keeping up-to-date with any new activities or offers." | Users can find the social media links a in the footer which will direct them to the company's social platforms. |
+
+![Social Media Links](/documentation/images/features/footer.jpg)
+
+| User Story | Description | Testing |
+| ------- | ----------- | --------- |
+| 8 | "As a frequent user, I want to be able to view the gym's timetable to keep track of class' times and days that they are running." | Users can view the gym's timetable in the footer which shows class names, days and times. |
+
+![Timetable](/documentation/images/features/footer.jpg)
+
+| User Story | Description | Testing |
+| ------- | ----------- | --------- |
+| 9 | "As a frequent user, I want to be able to access and manage my profile and memberships." | Users can update their billing details. |
+
+![Manage Profile](/documentation/images/features/my-memberships.jpg)
+
+| User Story | Description | Testing |
+| ------- | ----------- | --------- |
+| 10 | "As a site owner, I want to advertise the memberships I have to offer to clients with a clean and organised look." | The membership info is displayed in a card element with styling that compliments the theme of the website. The site owner can add/edit/delete memberships with the CRUD functionality |
+
+![Add Membership](/documentation/images/features/add-membership.jpg)
+![Admin Access Buttons](/documentation/images/testing/admin-access.jpg)
+
+| User Story | Description | Testing |
+| ------- | ----------- | --------- |
+| 11 | "As a site owner, I need to provide a safe and secure payment system for my clients." | Users are able to purchase memberships via the Stripe online payment system. |
+
+![Make Payment](/documentation/images/testing/payment.jpg)
+![Stripe Webhook](/documentation/images/testing/webhook.jpg)
 
 ## Functionality Testing (Manual)
 
@@ -72,45 +86,45 @@ Tests the navbar selections and various anchor links provided to assist users na
 
 | Test | Element | Desired Result | Actual Result | Google Chrome v 100.0.4896.88 | Edge v 100.0.1185.44 | Firefox v 99.0.1 (64-bit) |
 | ---- | ------- | -------------- | ------------- | ---------- | --------------- | ---------- |
-| 001 | Home link on navbar | Directs user to homepage | Opens homepage | PASS | PASS | PASS |
-| 002 | Brand logo | Directs user to homepage | Opens homepage | PASS | PASS | PASS |
-| 003 | Home link on mobile nav | Directs user to homepage | Opens homepage | PASS | PASS | PASS |
-| 004 | Log-in link on navbar | Directs user to log-in page | Opens log-in page | PASS | PASS | PASS |
-| 005 | Log-in link on mobile nav | Directs user to log-in page | Opens log-in page | PASS | PASS | PASS |
-| 006 | Log-in redirect link on registration page | Directs user to log-in page | Opens log-in page | PASS | PASS | PASS |
-| 007 | Registration link on navbar | Directs user to registration page | Opens registration page | PASS | PASS | PASS |
-| 008 | Registration link on mobile nav | Directs user to registration page | Opens registration page | PASS | PASS | PASS |
-| 009 | Registration redirect link on log-in page | Directs user to registration page | Opens registration page | PASS | PASS | PASS |
-| 010 | Sign-up/registration link in footer | Directs user to registration page | Opens registration page | PASS | PASS | PASS |
+| 001 | Home/logo link | Directs user to homepage | Opens homepage | PASS | PASS | PASS |
+| 003 | Memberships link | Directs user to Memberships page | Opens Membership page | PASS | PASS | PASS |
+| 004 | Contact Us link | Directs user to Contact Us page | Opens the Contact Form | PASS | PASS | PASS |
+| 003 | Memberships link on mobile nav | Directs user to Memberships page | Opens Membership page | PASS | PASS | PASS |
+| 004 | Contact Us link on mobile nav | Directs user to Contact Us page | Opens the Contact Form | PASS | PASS | PASS |
+| 005 | Sign-In link | Directs user to sign-in page | Opens Sign-In page | PASS | PASS | PASS |
+| 006 | Sign-Up redirect link on Sign-In page | Directs user to Sign-Up page | Opens Sign-Up page | PASS | PASS | PASS |
+| 007 | Sign-Up link | Directs user to Sign-Up page | Opens Sign-Up page | PASS | PASS | PASS |
+| 009 | Sign-In redirect link on Sign-Up page | Directs user to Sign-In page | Opens Sign-In page | PASS | PASS | PASS |
+| 010 | Forgot Password link | Directs user to Password Reset page | Opens Password Reset page | PASS | PASS | PASS |
+| 010 | Shopping Cart link | Directs user to the Shopping Cart page | Opens Shopping Cart page | PASS | PASS | PASS |
 
-### Registration/Log-In Testing
+### Sign-Up/Sign-In Testing
 
 Testing the registration process for new users and the log-in process for returning users. The app should provide feedback to the user in cases where incorrect inputs are provided.
 
 | Test | Element | Desired Result | Actual Result | Google Chrome v 100.0.4896.88 | Edge v 100.0.1185.44 | Firefox v 99.0.1 (64-bit) |
 | ---- | ------- | -------------- | ------------- | ---------- | --------------- | ---------- |
-| 011 | Username input | Feedback when requirements not met | Input box turns red and tooltip provides feedback | PASS | PASS | PASS |
+| 011 | Username input | Feedback when requirements not met | User is unable to progress further until requirements are met | PASS | PASS | PASS |
 | 012 | Password input | Feedback when requirements not met | Input box turns red and tooltip provides feedback | PASS | PASS | PASS |
-| 013 | Password confirmation | Feedback when passwords do not match | Confirm Password input field remains red until passwords match. Turns green on matching | PASS | PASS | PASS |
-| 014 | Username already exists | Let user know the username is not available | Flash message letting user know the username already exists. | PASS | PASS | PASS |
-| 015 | Password confirmation | Feedback when passwords do not match | Confirm Password input field remains red until passwords match. Turns green on matching | PASS | PASS | PASS |
-| 016 | Incorrect username | Inform user of a incorrect username OR password | Flash message letting user know that either an incorrect username or password has been entered | PASS | PASS | PASS |
-| 017 | Incorrect password | Inform user of a incorrect username OR password | Flash message letting user know that either an incorrect username or password has been entered | PASS | PASS | PASS |
+| 013 | Email confirmation | Feedback when email addresses do not match | User is unable to progress further until requirements are met | PASS | PASS | PASS |
+| 013 | Password confirmation | Feedback when passwords do not match | User is unable to progress further until requirements are met | PASS | PASS | PASS |
+| 014 | Email address already has account | Lets user know that the email address entered has already created an account | User is unable to progress further until requirements are met | PASS | PASS | PASS |
+| 016 | Incorrect username | Inform user of a incorrect username OR password | Message letting user know that either an incorrect username or password has been entered | PASS | PASS | PASS |
+| 017 | Incorrect password | Inform user of a incorrect username OR password | Message letting user know that either an incorrect username or password has been entered | PASS | PASS | PASS |
 
-![Incorrect Username/Password](/documentation/images/testing/incorrect.jpg)
+![Incorrect Username/Password](/documentation/images/testing/incorrect-pass.jpg)
 
-![Requirements not met](/documentation/images/testing/characters.jpg)
+![Requirements not met](/documentation/images/testing/feedback.jpg)
 
 | Test | Element | Desired Result | Actual Result | Google Chrome v 100.0.4896.88 | Edge v 100.0.1185.44 | Firefox v 99.0.1 (64-bit) |
 | ---- | ------- | -------------- | ------------- | ---------- | --------------- | ---------- |
-| 018 | Registration successful | User directed to Profile page with welcome message displayed | Profile page is loaded, displaying welcome message that includes the users' chosen username | PASS | PASS | PASS |
-| 019 | Log-In successful | User directed to Profile page with welcome message displayed | Profile page is loaded, displaying welcome message that includes the users' chosen username | PASS | PASS | PASS |
+| 018 | Sign-In/Sign-In successful | User directed to Home page | Home page is loaded, displaying a successful toast message. | PASS | PASS | PASS |
 
-![Profile Page](/documentation/images/testing/profile.jpg)
+![Toast Sign-in](/documentation/images/testing/sign-in-success.jpg)
 
 ### Recipe Search & View (READ)
 
-Testing the ability to view the recipe collection, filter by diet category or recipe name and perform a text search. Clicking the name of each recipe should also reveal the full recipe details.
+Testing the ability to view the memberships/products and filter by category. Clicking the 'Join Now' button should also direct the user to the Membership Details page which gives the user the option to add the membership to their cart.
 
 | Test | Element | Desired Result | Actual Result | Google Chrome v 100.0.4896.88 | Edge v 100.0.1185.44 | Firefox v 99.0.1 (64-bit) |
 | ---- | ------- | -------------- | ------------- | ---------- | --------------- | ---------- |

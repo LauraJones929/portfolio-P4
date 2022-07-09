@@ -1,8 +1,6 @@
 # Portfolio Project 4 - Full Stack Frameworks with Django
 
-## LJ Fitness - Live Site
-
-[View Live Site]()
+## LJ Fitness - [Live Site]()
 
 ## Business Objectives
 
@@ -51,13 +49,13 @@ The owner of the site will be able to:
 
 7. As a frequent user, I want to be able to follow the company's social media platforms so that I can follow them and share my fitness journey, as well as keeping up-to-date with any new activities or offers.
 
-8. As a frequent user, I want to be able to access and manage my profile and memberships.
+8. As a frequent user, I want to be able to view the gym's timetable to keep track of class' times and days that they are running.
+
+9. As a frequent user, I want to be able to access and manage my profile and memberships.
 
 **Site Owner Goals**
 
-9. As a site owner, I want to advertise the memberships I have to offer to clients with a clean and organised look.
-
-10. As a site owner, I need to enforce some basic access control when a user is editing or deleting data in order to prevent unauthorised editing or deletion of user uploaded data.
+10. As a site owner, I want to advertise the memberships I have to offer to clients with a clean and organised look.
 
 11. As a site owner, I need to provide a safe and secure payment system for my clients.
 
@@ -333,42 +331,14 @@ As this is a full-stack website it has been deployed to Heroku.com using the fol
     - `python3 manage.py loaddata memberships`
 8. Create a superuser log in - `python3 manage.py create superuser`.
 9. Remove the new `DATABASE` that was created in step 4, and uncomment the original `DATABASE`.
-
-
-
-Configuration settings and secret keys are needed for this app, which Heroku requires in order for the website to function as desired. To do this you need to set the Config Vars within Heroku:
-
-5. Under the "Settings" tab, in the Config Vars section select the "Reveal Config Vars" button.
-6. This will reveal a form for inputting the key and value pairs necessary to connect to the app, as follows:
-
-| KEY | VALUE |
-| --- | ----- |
-| IP | 0.0.0.0 |
-| PORT | 5000 |
-| SECRET KEY | Randomly Generated Fort Knox Key |
-| MONGO_URI | Your unique MongoDB URI |
-| MONGO_DBNAME | Your unique Mongo DB name |
-
-You can find the above Mongo_URI value in the appropriate Mongo DB Project under Cluster by selecting "Connect".
-
-7. Select "Clusters".
-8. Select "Connect".
-9. Select "Connect your application".
-10. Choose your Driver and Version.
-11. Copy your connection string.
-
-***Remember to substitute in your own DBNAME and Password***
+10. Create an `if` statement in the `DATABASE` in *settings.py* which will connect to Postgres and otherwise, connect to sequel light.
+11. Install gunicorn - `pip3 install gunicorn`, and freeze that into the requirements.txt file - `pip3 freeze > requirements.txt`.
+12. Create a *Procfile* that will tell Heroku to create a web dyno, which will run gunicorn and serve our django app.
 
 ### Enabling Automatic Deployment
 
 1. In Heroku, click the "Deploy" tab.
 2. In the "Automatic deploys" section select the branch you wish to use.
-
-***Since first deploying the application on Heroku, Heroku themselves have encountered a security problem and therefore have had to remove certain functionalities that would allow users to automatically deploy or update. All deployments are now carried out manually using the following procudure:***
-
-1. In the terminal, run the command `heroku login -i` and login when prompted.
-2. Run the following command: `heroku git:remote -a your_app_name_here` and replace `your_app_name_here` with the name of your Heroku app. This will link the app to your Gitpod terminal, and the Heroku app to the Gitpod workspace.
-3. After linking your app to your workspace with one of the above steps, you can then deploy new versions of the app by running the command `git push heroku main` and the app will be deployed to Heroku.
 
 ## Credits
 
