@@ -122,15 +122,17 @@ Testing the registration process for new users and the log-in process for return
 
 ![Toast Sign-in](/documentation/images/testing/sign-in-success.jpg)
 
-### Recipe Search & View (READ)
+### Memberships Filter & View (READ)
 
 Testing the ability to view the memberships/products and filter by category. Clicking the 'Join Now' button should also direct the user to the Membership Details page which gives the user the option to add the membership to their cart.
 
 | Test | Element | Desired Result | Actual Result | Google Chrome v 100.0.4896.88 | Edge v 100.0.1185.44 | Firefox v 99.0.1 (64-bit) |
 | ---- | ------- | -------------- | ------------- | ---------- | --------------- | ---------- |
-| 020 | Navigate to Recipes page (navbar) | Direct user to Recipes Page | Recipes page is loaded | PASS | PASS | PASS |
-| 021 | Navigate to Recipes page (mob nav) | Direct user to Recipes Page | Recipes page is loaded | PASS | PASS | PASS |
-| 022 | Categories and recipes organised & displayed | Recipes are organised by diet category | Recipes are visible beneath their category, waiting to be selected | PASS | PASS | PASS |
+| 020 | Navigate to Memberships page, viewing all memberships (navbar) | Direct user to Memberships page, showing all memberships | The Memberships page is loaded, displaying all membership cards. | PASS | PASS | PASS |
+| 021 | Navigate to Memberships page, filtering 'HIIT Fitness' memberships (navbar) | Direct user to Memberships page, displaying memberships for 'HIIT Fitness' | The Memberships page is loaded, displaying 'HIIT Fitness' membership cards. | PASS | PASS | PASS |
+| 021 | Navigate to Memberships page, filtering 'Strength & Conditioning' memberships (navbar) | Direct user to Memberships page, displaying memberships for 'Strength & Conditioning' | The Memberships page is loaded, displaying 'Strength & Conditioning' membership cards. | PASS | PASS | PASS |
+| 021 | Navigate to Memberships page, filtering 'Boxing' memberships (navbar) | Direct user to Memberships page, displaying memberships for 'Boxing' | The Memberships page is loaded, displaying 'Boxing' membership cards. | PASS | PASS | PASS |
+| 022 | Categories and Memberships organised & displayed | Memberships are organised by category | Memberships are displayed in order of category | PASS | PASS | PASS |
 | 023 | Recipe selected (dropdown) | Full recipe shown when user selects and clicks on the element | Recipe successfully drops down to show full details when clicked | PASS | PASS | PASS |
 | 024 | Recipe search | Show results based on user input | Correctly returns recipes and only shows matching results | PASS | PASS | PASS |
 
