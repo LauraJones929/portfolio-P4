@@ -133,70 +133,61 @@ Testing the ability to view the memberships/products and filter by category. Cli
 | 021 | Navigate to Memberships page, filtering 'Strength & Conditioning' memberships (navbar) | Direct user to Memberships page, displaying memberships for 'Strength & Conditioning' | The Memberships page is loaded, displaying 'Strength & Conditioning' membership cards. | PASS | PASS | PASS |
 | 021 | Navigate to Memberships page, filtering 'Boxing' memberships (navbar) | Direct user to Memberships page, displaying memberships for 'Boxing' | The Memberships page is loaded, displaying 'Boxing' membership cards. | PASS | PASS | PASS |
 | 022 | Categories and Memberships organised & displayed | Memberships are organised by category | Memberships are displayed in order of category | PASS | PASS | PASS |
-| 023 | Recipe selected (dropdown) | Full recipe shown when user selects and clicks on the element | Recipe successfully drops down to show full details when clicked | PASS | PASS | PASS |
-| 024 | Recipe search | Show results based on user input | Correctly returns recipes and only shows matching results | PASS | PASS | PASS |
 
-### Add Recipe (CREATE)
+### ADMIN ONLY - Add Membership (CREATE)
 
-Testing the ability to upload a new recipe to the database collection.
+Testing the ability to add a new product/membership to the database.
 
 | Test | Element | Desired Result | Actual Result | Google Chrome v 100.0.4896.88 | Edge v 100.0.1185.44 | Firefox v 99.0.1 (64-bit) |
 | ---- | ------- | -------------- | ------------- | ---------- | --------------- | ---------- |
-| 025 | Navbar link | Direct user to Add a Recipe Page | Add a Recipe page is loaded | PASS | PASS | PASS |
-| 026 | Mob nav link | Direct user to Add a Recipe Page | Add a Recipe page is loaded | PASS | PASS | PASS |
-| 027 | Recipe Name | User can input name of recipe as desired | Recipe name successfully inserted. Feedback provided if character count is less than 5 | PASS | PASS | PASS |
-| 028 | Vegetarian switch | Marks recipe as 'veggie-safe' or not | When switched 'on', the recipe is marked as 'veggie-safe' at the front-end | PASS | PASS | PASS |
-| 029 | Cooking Time | Displays cooking time | User can input the cooking time. Feedback provided if character count is less than 2 | PASS | PASS | PASS |
-| 030 | Skill Level | Displays skill level | User can input the skill level of the recipe. Feedback provided if character count is less than 3 | PASS | PASS | PASS |
-| 031 | Serves | Displays how many people can be served | User can input the number of people can be served. Feedback provided if character count is less than 5 or if any characters have been used other than 0-9 | PASS | PASS | PASS |
-| 032 | Ingredients | Displays ingredients needed | User can input the ingredients needed in the text area. Feedback provided if character count is less than 10 | PASS | PASS | PASS |
-| 033 | Method | Displays recipe method | User can input the recipe method in the text area. Feedback provided if character count is less than 10 | PASS | PASS | PASS |
-| 034 | Add a Recipe button | Uploads recipe and redirects user to the My Recipes page | User can successfully upload a recipe and is redirected to My Recipes page. Flash message states recipe was successfully added. | PASS | PASS | PASS |
-| 035 | Data Written to MongoDB | Confirm new recipe data is written to MongoDB | New recipes appear in the Recipes collection within Mongo DB. All fields are populated if completed | PASS | PASS | PASS |
-| 036 | Added to Recipes page | New recipe successfully renders on My Recipes page | The new recipe renders as intended on the My Recipes page | PASS | PASS | PASS |
+| 025 | Navbar link (Gym Management) | Direct admin user to the 'Add a Membership form' page | The Gym Management page loads and displays the 'Add a Membership form' | PASS | PASS | PASS |
+| 026 | Mob nav link (Gym Management) | Direct admin user to the 'Add a Membership form' page | The Gym Management page loads and displays the 'Add a Membership form' | PASS | PASS | PASS |
+| 027 | Category name | Admin user can select the category that the membership will be added to | Category name successfully added | PASS | PASS | PASS |
+| 028 | Add Membership name | Field is required | Admin user is able to add a membership name and feedback is provided when this field does not have a value | PASS | PASS | PASS |
+| 029 | Add description | Field is required | Admin user is able to add a membership description and feedback is provided when this field does not have a value | PASS | PASS | PASS |
+| 030 | Add price | Field is required | Admin user is able to add a membership price and feedback is provided when this field does not have a value | PASS | PASS | PASS |
+| 031 | New membership adds to Memberships page | New membership is displayed in the Memberships page in category order | Users can view the newly added membership | PASS | PASS | PASS |
 
-### Edit Recipe (UPDATE)
+### ADMIN ACCESS ONLY - Edit Membership (UPDATE)
 
-Testing the ability to retrieve a previously uploaded recipe from the database and edit any of the data previously supplied.
+Testing the ability to retrieve a previously uploaded membership from the database and edit any of the data previously supplied.
 
 | Test | Element | Desired Result | Actual Result | Google Chrome v 100.0.4896.88 | Edge v 100.0.1185.44 | Firefox v 99.0.1 (64-bit) |
 | ---- | ------- | -------------- | ------------- | ---------- | --------------- | ---------- |
-| 037 | Edit button | Direct user to Edit Recipe Page | Edit Recipe page is loaded | PASS | PASS | PASS |
-| 038 | Restricted Access | Users can only edit their own recipe | Edit button displays only for the user that it was created by | PASS | PASS | PASS |
-| 039 | Existing data renders | Display existing recipe data from the database onto the form | All of the existing data is loaded into the form fields | PASS | PASS | PASS |
-| 040 | Edit button | Direct user to Edit Recipe Page | Edit Recipe page is loaded | PASS | PASS | PASS |
-| 041 | Recipe Name | Recipe name can be edited | User can edit and delete the recipe name | PASS | PASS | PASS |
-| 042 | Vegetarian switch | Switch can be changed | User can toggle the switch from on/off | PASS | PASS | PASS |
-| 043 | Cooking Time | Text can be edited | User can edit and delete the cooking time. | PASS | PASS | PASS |
-| 044 | Skill Level | Text can be edited | User can edit and delete the skill level | PASS | PASS | PASS |
-| 045 | Serves | Text can be edited | User can edit and delete the number of people served | PASS | PASS | PASS |
-| 046 | Ingredients | Text can be edited | User can edit and delete the ingredients needed in the text area | PASS | PASS | PASS |
-| 047 | Method | Text can be edited | User can edit and delete the method in the text area | PASS | PASS | PASS |
-| 048 | Edit Recipe button | Saves and uploads edited recipe to the database and redirects user to the My Recipes page | User can successfully edit a recipe and is redirected to My Recipes page. Flash message states recipe was successfully edited | PASS | PASS | PASS |
-| 049 | Data Written to MongoDB | Confirm recipe data is edited and written to MongoDB | Edited recipes appear in the Recipes collection within Mongo DB. All fields are populated if completed | PASS | PASS | PASS |
-| 050 | My Recipes updated | Edited recipe successfully renders on My Recipes page | The edited recipe renders as intended on the My Recipes page | PASS | PASS | PASS |
+| 037 | Edit button | Direct user to Edit Membership form | Edit Edit Membership form is loaded | PASS | PASS | PASS |
+| 039 | Existing data renders | Display existing membership data from the database onto the form | All of the existing data is loaded into the form fields | PASS | PASS | PASS |
+| 041 | Edit Category name | Category name can be edited | Admin user can edit the category name | PASS | PASS | PASS |
+| 042 | Edit Membership name | Membership name can be edited | Admin user can edit and delete the membership name | PASS | PASS | PASS |
+| 043 | Edit Description | Description can be edited | Admin user can edit and delete the description | PASS | PASS | PASS |
+| 044 | Edit Price | Price can be edited | Admin user can edit the membership price | PASS | PASS | PASS |
+| 044 | 'Update Membership' button | Admin user is redirected to the Membership Details page | Upon completing the edit form and submitting, the admin user is successfully redirect to the specificied Membership Details page | PASS | PASS | PASS |
+| 049 | Data Written to Django Admin | Confirm membership data is edited and written to Django Admin | Edited memberships appear in the Django Admin displaying their updated fields | PASS | PASS | PASS |
+| 050 | Memberships page updated | Edited membership successfully renders on Memberships page | The edited membership renders as intended on the Memberships page | PASS | PASS | PASS |
 
-### Manage Categories
+### ADMIN ACCESS ONLY - Delete Membership (UPDATE)
 
-Testing the ability to create, edit and delete the diet categories from the database.
+Testing the ability to delete the diet memberships from the database.
 
 | Test | Element | Desired Result | Actual Result | Google Chrome v 100.0.4896.88 | Edge v 100.0.1185.44 | Firefox v 99.0.1 (64-bit) |
 | ---- | ------- | -------------- | ------------- | ---------- | --------------- | ---------- |
-| 051 | Navbar link (restricted access) | Directs user (admin) to Manage Categories page | User (admin) is successfully directed to the Manage Categories page | PASS | PASS | PASS |
-| 052 | Admin-only access | Manage Categories page is only accessible by the admin | Username 'admin123' can access the Manage Categories page. Other usernames cannot. | PASS | PASS | PASS |
-| 053 | Categories displayed | Existing diet categories within the database are displayed in card elements | User (admin) is able to view the category cards, with the options to edit or delete | PASS | PASS | PASS |
-| 054 | Edit Button | Directs admin to Edit Category page where the name of the category can be changed | Admin is successfully directed to the Edit Category page and is able to edit the name of the category. Category name is successfully updated in the database | PASS | PASS | PASS |
-| 055 | Delete Button | Deletes category | User can successfully delete a category from the web app and the database | PASS | PASS | PASS |
-| 056 | Add a Category | Creates a new category | Admin is able to create a new category that will be visible to all users | PASS | PASS | PASS |
+| 055 | Delete Button | Deletes membership | Admin user can successfully delete a membership from the web app and the database | PASS | PASS | PASS |
+| 044 | Redirect | Admin user is redirected to the Memberships page | Upon deleting the membership, the admin user is successfully redirected to the Memberships page, where the deleted membership is no longer displayed | PASS | PASS | PASS |
 
-### Delete Recipe (DELETE)
+### Purchase a Membership
 
-Testing for successful deletion of the recipe from the web-app and from the database.
+Testing the ability to purchase a membership by adding to the shopping cart and making a secure online payment via Stripe.
 
 | Test | Element | Desired Result | Actual Result | Google Chrome v 100.0.4896.88 | Edge v 100.0.1185.44 | Firefox v 99.0.1 (64-bit) |
 | ---- | ------- | -------------- | ------------- | ---------- | --------------- | ---------- |
-| 057 | Delete button | Recipe is deleted from database | User can successfully delete recipe from the app and database | PASS | PASS | PASS |
-| 058 | Restricted Access | Users can only delete their own recipe | Delete button displays only for the user that it was created by | PASS | PASS | PASS |
+| 055 | 'Join Now' button | Directs user to the Membership Detils page of chosen membership | User is successfully directed to the Membership Detail | PASS | PASS | PASS |
+| 044 | Quantity increment/decrement | Increases or decreases the quantity of the membership | Quantity is successfully increased/decreased and shows in the grand total once added to cart | PASS | PASS | PASS |
+| 044 | 'Add To Cart' button | Adds membership/s to shopping cart and lets user know with a toast message | Membership/s is successfully added to shopping cart, displaying a 'success' toast message to let the user know | PASS | PASS | PASS |
+| 044 | 'Go To Secure Checkout' button | Toast message displays button that directs user to the Shopping Cart | Upon clicking the button in the success toast message, the user is successfully directed to the Shopping Cart | PASS | PASS | PASS |
+| 044 | Quantity increment/decrement (Shopping Cart) | Increases or decreases the quantity of the membership and changes grand total price | Quantity and price are successfully increased/decreased | PASS | PASS | PASS |
+| 044 | 'Secure Checkout' button | Directs user to the Checkout page | User is successfully directed to the Checkout page | PASS | PASS | PASS |
+| 044 | Checkout Form Fields | All mandatory fields display feedback messages if no value is entered | Feedback message is displayed to let the user know that they must enter a value | PASS | PASS | PASS |
+| 044 | 'Complete Payment' button | If payment functionality is successful, user is directed to the Confirmation page | User is successfully directed to the Confirmation page, displaying order details and a message letting the user know that a confirmation email has been sent | PASS | PASS | PASS |
+| 044 | Stripe validation | Order is passed from checkout app to stripe | Stripe receives the order and payment request | PASS | PASS | PASS |
 
 ### Other Links
 
