@@ -87,16 +87,16 @@ Tests the navbar selections and various anchor links provided to assist users na
 | Test | Element | Desired Result | Actual Result | Google Chrome v 100.0.4896.88 | Edge v 100.0.1185.44 | Firefox v 99.0.1 (64-bit) |
 | ---- | ------- | -------------- | ------------- | ---------- | --------------- | ---------- |
 | 001 | Home/logo link | Directs user to homepage | Opens homepage | PASS | PASS | PASS |
-| 003 | Memberships link | Directs user to Memberships page | Opens Membership page | PASS | PASS | PASS |
-| 004 | Contact Us link | Directs user to Contact Us page | Opens the Contact Form | PASS | PASS | PASS |
-| 003 | Memberships link on mobile nav | Directs user to Memberships page | Opens Membership page | PASS | PASS | PASS |
-| 004 | Contact Us link on mobile nav | Directs user to Contact Us page | Opens the Contact Form | PASS | PASS | PASS |
-| 005 | Sign-In link | Directs user to sign-in page | Opens Sign-In page | PASS | PASS | PASS |
-| 006 | Sign-Up redirect link on Sign-In page | Directs user to Sign-Up page | Opens Sign-Up page | PASS | PASS | PASS |
-| 007 | Sign-Up link | Directs user to Sign-Up page | Opens Sign-Up page | PASS | PASS | PASS |
+| 002 | Memberships link | Directs user to Memberships page | Opens Membership page | PASS | PASS | PASS |
+| 003 | Contact Us link | Directs user to Contact Us page | Opens the Contact Form | PASS | PASS | PASS |
+| 004 | Memberships link on mobile nav | Directs user to Memberships page | Opens Membership page | PASS | PASS | PASS |
+| 005 | Contact Us link on mobile nav | Directs user to Contact Us page | Opens the Contact Form | PASS | PASS | PASS |
+| 006 | Sign-In link | Directs user to sign-in page | Opens Sign-In page | PASS | PASS | PASS |
+| 007 | Sign-Up redirect link on Sign-In page | Directs user to Sign-Up page | Opens Sign-Up page | PASS | PASS | PASS |
+| 008 | Sign-Up link | Directs user to Sign-Up page | Opens Sign-Up page | PASS | PASS | PASS |
 | 009 | Sign-In redirect link on Sign-Up page | Directs user to Sign-In page | Opens Sign-In page | PASS | PASS | PASS |
 | 010 | Forgot Password link | Directs user to Password Reset page | Opens Password Reset page | PASS | PASS | PASS |
-| 010 | Shopping Cart link | Directs user to the Shopping Cart page | Opens Shopping Cart page | PASS | PASS | PASS |
+| 011 | Shopping Cart link | Directs user to the Shopping Cart page | Opens Shopping Cart page | PASS | PASS | PASS |
 
 ### Sign-Up/Sign-In Testing
 
@@ -104,13 +104,13 @@ Testing the registration process for new users and the log-in process for return
 
 | Test | Element | Desired Result | Actual Result | Google Chrome v 100.0.4896.88 | Edge v 100.0.1185.44 | Firefox v 99.0.1 (64-bit) |
 | ---- | ------- | -------------- | ------------- | ---------- | --------------- | ---------- |
-| 011 | Username input | Feedback when requirements not met | User is unable to progress further until requirements are met | PASS | PASS | PASS |
-| 012 | Password input | Feedback when requirements not met | Input box turns red and tooltip provides feedback | PASS | PASS | PASS |
-| 013 | Email confirmation | Feedback when email addresses do not match | User is unable to progress further until requirements are met | PASS | PASS | PASS |
-| 013 | Password confirmation | Feedback when passwords do not match | User is unable to progress further until requirements are met | PASS | PASS | PASS |
-| 014 | Email address already has account | Lets user know that the email address entered has already created an account | User is unable to progress further until requirements are met | PASS | PASS | PASS |
-| 016 | Incorrect username | Inform user of a incorrect username OR password | Message letting user know that either an incorrect username or password has been entered | PASS | PASS | PASS |
-| 017 | Incorrect password | Inform user of a incorrect username OR password | Message letting user know that either an incorrect username or password has been entered | PASS | PASS | PASS |
+| 012 | Username input | Feedback when requirements not met | User is unable to progress further until requirements are met | PASS | PASS | PASS |
+| 013 | Password input | Feedback when requirements not met | Input box turns red and tooltip provides feedback | PASS | PASS | PASS |
+| 014 | Email confirmation | Feedback when email addresses do not match | User is unable to progress further until requirements are met | PASS | PASS | PASS |
+| 015 | Password confirmation | Feedback when passwords do not match | User is unable to progress further until requirements are met | PASS | PASS | PASS |
+| 016 | Email address already has account | Lets user know that the email address entered has already created an account | User is unable to progress further until requirements are met | PASS | PASS | PASS |
+| 017 | Incorrect username | Inform user of a incorrect username OR password | Message letting user know that either an incorrect username or password has been entered | PASS | PASS | PASS |
+| 018 | Incorrect password | Inform user of a incorrect username OR password | Message letting user know that either an incorrect username or password has been entered | PASS | PASS | PASS |
 
 ![Incorrect Username/Password](/documentation/images/testing/incorrect-pass.jpg)
 
@@ -118,7 +118,7 @@ Testing the registration process for new users and the log-in process for return
 
 | Test | Element | Desired Result | Actual Result | Google Chrome v 100.0.4896.88 | Edge v 100.0.1185.44 | Firefox v 99.0.1 (64-bit) |
 | ---- | ------- | -------------- | ------------- | ---------- | --------------- | ---------- |
-| 018 | Sign-In/Sign-In successful | User directed to Home page | Home page is loaded, displaying a successful toast message. | PASS | PASS | PASS |
+| 019 | Sign-In/Sign-In successful | User directed to Home page | Home page is loaded, displaying a successful toast message. | PASS | PASS | PASS |
 
 ![Toast Sign-in](/documentation/images/testing/sign-in-success.jpg)
 
@@ -130,9 +130,9 @@ Testing the ability to view the memberships/products and filter by category. Cli
 | ---- | ------- | -------------- | ------------- | ---------- | --------------- | ---------- |
 | 020 | Navigate to Memberships page, viewing all memberships (navbar) | Direct user to Memberships page, showing all memberships | The Memberships page is loaded, displaying all membership cards. | PASS | PASS | PASS |
 | 021 | Navigate to Memberships page, filtering 'HIIT Fitness' memberships (navbar) | Direct user to Memberships page, displaying memberships for 'HIIT Fitness' | The Memberships page is loaded, displaying 'HIIT Fitness' membership cards. | PASS | PASS | PASS |
-| 021 | Navigate to Memberships page, filtering 'Strength & Conditioning' memberships (navbar) | Direct user to Memberships page, displaying memberships for 'Strength & Conditioning' | The Memberships page is loaded, displaying 'Strength & Conditioning' membership cards. | PASS | PASS | PASS |
-| 021 | Navigate to Memberships page, filtering 'Boxing' memberships (navbar) | Direct user to Memberships page, displaying memberships for 'Boxing' | The Memberships page is loaded, displaying 'Boxing' membership cards. | PASS | PASS | PASS |
-| 022 | Categories and Memberships organised & displayed | Memberships are organised by category | Memberships are displayed in order of category | PASS | PASS | PASS |
+| 022 | Navigate to Memberships page, filtering 'Strength & Conditioning' memberships (navbar) | Direct user to Memberships page, displaying memberships for 'Strength & Conditioning' | The Memberships page is loaded, displaying 'Strength & Conditioning' membership cards. | PASS | PASS | PASS |
+| 023 | Navigate to Memberships page, filtering 'Boxing' memberships (navbar) | Direct user to Memberships page, displaying memberships for 'Boxing' | The Memberships page is loaded, displaying 'Boxing' membership cards. | PASS | PASS | PASS |
+| 024 | Categories and Memberships organised & displayed | Memberships are organised by category | Memberships are displayed in order of category | PASS | PASS | PASS |
 
 ### ADMIN ONLY - Add Membership (CREATE)
 
@@ -154,15 +154,15 @@ Testing the ability to retrieve a previously uploaded membership from the databa
 
 | Test | Element | Desired Result | Actual Result | Google Chrome v 100.0.4896.88 | Edge v 100.0.1185.44 | Firefox v 99.0.1 (64-bit) |
 | ---- | ------- | -------------- | ------------- | ---------- | --------------- | ---------- |
-| 037 | Edit button | Direct user to Edit Membership form | Edit Edit Membership form is loaded | PASS | PASS | PASS |
-| 039 | Existing data renders | Display existing membership data from the database onto the form | All of the existing data is loaded into the form fields | PASS | PASS | PASS |
-| 041 | Edit Category name | Category name can be edited | Admin user can edit the category name | PASS | PASS | PASS |
-| 042 | Edit Membership name | Membership name can be edited | Admin user can edit and delete the membership name | PASS | PASS | PASS |
-| 043 | Edit Description | Description can be edited | Admin user can edit and delete the description | PASS | PASS | PASS |
-| 044 | Edit Price | Price can be edited | Admin user can edit the membership price | PASS | PASS | PASS |
-| 044 | 'Update Membership' button | Admin user is redirected to the Membership Details page | Upon completing the edit form and submitting, the admin user is successfully redirect to the specificied Membership Details page | PASS | PASS | PASS |
-| 049 | Data Written to Django Admin | Confirm membership data is edited and written to Django Admin | Edited memberships appear in the Django Admin displaying their updated fields | PASS | PASS | PASS |
-| 050 | Memberships page updated | Edited membership successfully renders on Memberships page | The edited membership renders as intended on the Memberships page | PASS | PASS | PASS |
+| 032 | Edit button | Direct user to Edit Membership form | Edit Edit Membership form is loaded | PASS | PASS | PASS |
+| 033 | Existing data renders | Display existing membership data from the database onto the form | All of the existing data is loaded into the form fields | PASS | PASS | PASS |
+| 034 | Edit Category name | Category name can be edited | Admin user can edit the category name | PASS | PASS | PASS |
+| 035 | Edit Membership name | Membership name can be edited | Admin user can edit and delete the membership name | PASS | PASS | PASS |
+| 036 | Edit Description | Description can be edited | Admin user can edit and delete the description | PASS | PASS | PASS |
+| 037 | Edit Price | Price can be edited | Admin user can edit the membership price | PASS | PASS | PASS |
+| 038 | 'Update Membership' button | Admin user is redirected to the Membership Details page | Upon completing the edit form and submitting, the admin user is successfully redirect to the specificied Membership Details page | PASS | PASS | PASS |
+| 039 | Data Written to Django Admin | Confirm membership data is edited and written to Django Admin | Edited memberships appear in the Django Admin displaying their updated fields | PASS | PASS | PASS |
+| 040 | Memberships page updated | Edited membership successfully renders on Memberships page | The edited membership renders as intended on the Memberships page | PASS | PASS | PASS |
 
 ### ADMIN ACCESS ONLY - Delete Membership (UPDATE)
 
@@ -170,8 +170,8 @@ Testing the ability to delete the diet memberships from the database.
 
 | Test | Element | Desired Result | Actual Result | Google Chrome v 100.0.4896.88 | Edge v 100.0.1185.44 | Firefox v 99.0.1 (64-bit) |
 | ---- | ------- | -------------- | ------------- | ---------- | --------------- | ---------- |
-| 055 | Delete Button | Deletes membership | Admin user can successfully delete a membership from the web app and the database | PASS | PASS | PASS |
-| 044 | Redirect | Admin user is redirected to the Memberships page | Upon deleting the membership, the admin user is successfully redirected to the Memberships page, where the deleted membership is no longer displayed | PASS | PASS | PASS |
+| 041 | Delete Button | Deletes membership | Admin user can successfully delete a membership from the web app and the database | PASS | PASS | PASS |
+| 042 | Redirect | Admin user is redirected to the Memberships page | Upon deleting the membership, the admin user is successfully redirected to the Memberships page, where the deleted membership is no longer displayed | PASS | PASS | PASS |
 
 ### Purchase a Membership
 
@@ -179,21 +179,21 @@ Testing the ability to purchase a membership by adding to the shopping cart and 
 
 | Test | Element | Desired Result | Actual Result | Google Chrome v 100.0.4896.88 | Edge v 100.0.1185.44 | Firefox v 99.0.1 (64-bit) |
 | ---- | ------- | -------------- | ------------- | ---------- | --------------- | ---------- |
-| 055 | 'Join Now' button | Directs user to the Membership Detils page of chosen membership | User is successfully directed to the Membership Detail | PASS | PASS | PASS |
+| 043 | 'Join Now' button | Directs user to the Membership Detils page of chosen membership | User is successfully directed to the Membership Detail | PASS | PASS | PASS |
 | 044 | Quantity increment/decrement | Increases or decreases the quantity of the membership | Quantity is successfully increased/decreased and shows in the grand total once added to cart | PASS | PASS | PASS |
-| 044 | 'Add To Cart' button | Adds membership/s to shopping cart and lets user know with a toast message | Membership/s is successfully added to shopping cart, displaying a 'success' toast message to let the user know | PASS | PASS | PASS |
-| 044 | 'Go To Secure Checkout' button | Toast message displays button that directs user to the Shopping Cart | Upon clicking the button in the success toast message, the user is successfully directed to the Shopping Cart | PASS | PASS | PASS |
-| 044 | Quantity increment/decrement (Shopping Cart) | Increases or decreases the quantity of the membership and changes grand total price | Quantity and price are successfully increased/decreased | PASS | PASS | PASS |
-| 044 | 'Secure Checkout' button | Directs user to the Checkout page | User is successfully directed to the Checkout page | PASS | PASS | PASS |
-| 044 | Checkout Form Fields | All mandatory fields display feedback messages if no value is entered | Feedback message is displayed to let the user know that they must enter a value | PASS | PASS | PASS |
-| 044 | 'Complete Payment' button | If payment functionality is successful, user is directed to the Confirmation page | User is successfully directed to the Confirmation page, displaying order details and a message letting the user know that a confirmation email has been sent | PASS | PASS | PASS |
-| 044 | Stripe validation | Order is passed from checkout app to stripe | Stripe receives the order and payment request | PASS | PASS | PASS |
+| 045 | 'Add To Cart' button | Adds membership/s to shopping cart and lets user know with a toast message | Membership/s is successfully added to shopping cart, displaying a 'success' toast message to let the user know | PASS | PASS | PASS |
+| 046 | 'Go To Secure Checkout' button | Toast message displays button that directs user to the Shopping Cart | Upon clicking the button in the success toast message, the user is successfully directed to the Shopping Cart | PASS | PASS | PASS |
+| 047 | Quantity increment/decrement (Shopping Cart) | Increases or decreases the quantity of the membership and changes grand total price | Quantity and price are successfully increased/decreased | PASS | PASS | PASS |
+| 048 | 'Secure Checkout' button | Directs user to the Checkout page | User is successfully directed to the Checkout page | PASS | PASS | PASS |
+| 049 | Checkout Form Fields | All mandatory fields display feedback messages if no value is entered | Feedback message is displayed to let the user know that they must enter a value | PASS | PASS | PASS |
+| 050 | 'Complete Payment' button | If payment functionality is successful, user is directed to the Confirmation page | User is successfully directed to the Confirmation page, displaying order details and a message letting the user know that a confirmation email has been sent | PASS | PASS | PASS |
+| 051 | Stripe validation | Order is passed from checkout app to stripe | Stripe receives the order and payment request | PASS | PASS | PASS |
 
 ### Other Links
 
 | Test | Element | Desired Result | Actual Result | Google Chrome v 100.0.4896.88 | Edge v 100.0.1185.44 | Firefox v 99.0.1 (64-bit) |
 | ---- | ------- | -------------- | ------------- | ---------- | --------------- | ---------- |
-| 059 | Social Media Links | Social Media icons to perform as a link that directs user to the company's social media platforms | User is directed to the social media platform when relevant icon is clicked | PASS | PASS | PASS |
+| 052 | Social Media Links | Social Media icons to perform as a link that directs user to the company's social media platforms | User is directed to the social media platform when relevant icon is clicked | PASS | PASS | PASS |
 
 ## Appearance Testing
 
@@ -220,7 +220,7 @@ Online tools have been used to validate the HTML, CSS, Python and JavaScript fil
 | ---- | ------- | ------ | --------- | ------- |
 | HTML Validation | Copy page URI into W3C validator | 1 Error - 2 Warnings - Section lacks headers | [HTML W3C Validator Results](/documentation/images/testing/html-check.jpg) | After changing the ID to a Class, this returned more errors as the aria-labelledby tag would not register the class attribute. I have left this error as it is, as it does not seem to have effected the layout or structure of the page. |
 | CSS Validation | Copy page URI into W3C validator | No Errors or Warnings detected | [CSS W3C Validator Results](/documentation/images/testing/css-check.jpg) |  |
-| Python Validation | Copy Python code into PEP8 validator | Some issues relating to lines being too long however some of these were best left alone as they created further issues when breaking up lines which effected the functionality | [Pep8 Validator Website](http://pep8online.com/)
+| Python Validation | Copy Python code into PEP8 validator | Some Errors |  [Pep8 Validator Website](http://pep8online.com/) | Some issues relating to lines being too long however some of these were best left alone as they created further issues when breaking up lines which effected the functionality |
 | JavaScript Validation | Copy JavaScript code into JShint | Warnings | [JShint Validator Results](/documentation/images/testing/jshint.jpg) | Warning related to ES6 versions. Web app not affected |
 
 ## Responsivity Testing

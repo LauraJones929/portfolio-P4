@@ -362,9 +362,8 @@ Much of the structure of this site follows what was taught during the Full Stack
 
 | Imagery | Description | Source |
 | ------------- | ----------- | ------ |
-| Landing Page | Background Image | [Pixabay](https://pixabay.com/) |
-| Recipes Page | Card Images | [Pixabay](https://pixabay.com/) |
-| Manage Categories | Card Images | [Pixabay](https://pixabay.com/) |
+| Landing Page | Background Image | [Pexels](https://www.pexels.com/) |
+| Feature Image (Membership Details page) | Woman in gym | [Pexels](https://www.pexels.com/) |
 
 ## Acknowledgements
 
