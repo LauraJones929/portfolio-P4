@@ -25,7 +25,7 @@ The owner of the site will be able to:
 
 ## Homepage Mockup
 
-![]()
+![Mockup Image](/documentation/images/features/mockup.jpg)
 
 ## User Experience (UX)
 ### User Stories
