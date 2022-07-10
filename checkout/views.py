@@ -31,7 +31,6 @@ def cache_checkout_data(request):
         return HttpResponse(content=e, status=400)
 
 
-
 def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
@@ -119,7 +118,7 @@ def checkout(request):
                 'county': profile.default_county,
             })
         except UserProfile.DoesNotExist:
-            order_form = OrderForm()               
+            order_form = OrderForm()
     else:
         order_form = OrderForm()
 

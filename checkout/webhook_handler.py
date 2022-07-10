@@ -14,6 +14,7 @@ from profiles.models import UserProfile
 import json
 import time
 
+
 class StripeWH_Handler:
     """Handle Stripe webhooks"""
 
@@ -31,13 +32,13 @@ class StripeWH_Handler:
         body = render_to_string(
             'checkout/confirmation_emails/confirmation_email_body.txt',
             {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
-        
+
         send_mail(
             subject,
             body,
             settings.DEFAULT_FROM_EMAIL,
             [cust_email]
-        )     
+        )
 
     def handle_event(self, event):
         """
@@ -99,7 +100,7 @@ class StripeWH_Handler:
                     postcode=billing_details.address.postal_code,
                     town_or_city=billing_details.address.city,
                     street_address1=billing_details.address.line1,
-                    street_address2=billing_details.address.line2, 
+                    street_address2=billing_details.address.line2,
                     county=billing_details.address.state,
                     original_bag=bag,
                     stripe_pid=pid,

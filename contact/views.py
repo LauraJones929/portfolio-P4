@@ -22,11 +22,10 @@ def contact(request):
                 request, 'Failed to send email. Please ensure you have filled out the form correctly.')
     else:
         form = ContactForm()
-        
+
     template = 'contact.html'
     context = {
         'form': form,
     }
 
     return render(request, template, context)
-
