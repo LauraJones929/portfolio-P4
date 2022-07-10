@@ -201,16 +201,16 @@ The following tables show the appearance testing to check for any differences ac
 
 | Page | Google Chrome | Edge | Firefox |
 | ---- | ------------- | ---- | ------- |
-| Landing Page | No visible difference | No visible difference | h1 heading is less bold |
-| Registration Page | No visible difference | No visible difference | No visible difference |
-| Log-In Page | No visible difference | No visible difference | No visible difference |
-| Profile Page | No visible difference | No visible difference | No visible difference |
-| My Recipes Page | No visible difference | No visible difference | Placeholder text is lighter than other browsers. Recipes text is bolder
-| Add a Recipe Page | No visible difference | No visible difference | No visible difference |
-| Edit Recipe Page | No visible difference | No visible difference | Input text appears to be darker/bolder but less sharp
-| Manage Categories Page | No visible difference | No visible difference | No visible difference |
-| Edit Category Page | No visible difference | No visible difference | No visible difference |
-| Add Category Page | No visible difference | No visible difference | No visible difference |
+| Landing Page | No visible difference | No visible difference | No visible difference |
+| Sign-Up Page | No visible difference | No visible difference | No visible difference |
+| Sign-In Page | No visible difference | No visible difference | No visible difference |
+| My Memberships Page | No visible difference | No visible difference | No visible difference |
+| Memberships Page | No visible difference | No visible difference | No visible difference |
+| Contact Us Page | No visible difference | No visible difference | No visible difference |
+| Membership Details Page | No visible difference | No visible difference | No visible difference |
+| Shopping Cart Page | No visible difference | No visible difference | No visible difference |
+| Checkout Page | No visible difference | No visible difference | No visible difference |
+| Gym Management Page | No visible difference | No visible difference | No visible difference |
 
 ## Code Quality and Validation
 
@@ -218,10 +218,10 @@ Online tools have been used to validate the HTML, CSS, Python and JavaScript fil
 
 | Test | Process | Result | Image URL | Comment |
 | ---- | ------- | ------ | --------- | ------- |
-| HTML Validation | Copy page URI into W3C validator | 1 Warning - Section lacks headers | [HTML W3C Validator Results](/documentation/images/testing/htmlvalid.jpg) | The page has a heading. This is not a conventional website page layout of multiple headed sections |
-| CSS Validation | Copy page URI into W3C validator | 7 Warnings - Related to Materialize CSS | [CSS W3C Validator Results](/documentation/images/testing/cssvalid.jpg) | The errors that have shown are related to the Materialize CSS that I have used. Layout or functionality of the app is not affected |
-| Python Validation | Copy Python code into PEP8 validator | No issues | [Pep8 Validator Results](/documentation/images/testing/pep8.jpg)
-| JavaScript Validation | Copy JavaScript code into JShint | Warnings | [JShint Validator Results](/documentation/images/testing/jshint.jpg) | Warning related to Materialize CSS code and ES6 versions. Web app not affected |
+| HTML Validation | Copy page URI into W3C validator | 1 Error - 2 Warnings - Section lacks headers | [HTML W3C Validator Results](/documentation/images/testing/html-check.jpg) | After changing the ID to a Class, this returned more errors as the aria-labelledby tag would not register the class attribute. I have left this error as it is, as it does not seem to have effected the layout or structure of the page. |
+| CSS Validation | Copy page URI into W3C validator | No Errors or Warnings detected | [CSS W3C Validator Results](/documentation/images/testing/css-check.jpg) |  |
+| Python Validation | Copy Python code into PEP8 validator | Some issues relating to lines being too long however some of these were best left alone as they created further issues when breaking up lines which effected the functionality | [Pep8 Validator Website](http://pep8online.com/)
+| JavaScript Validation | Copy JavaScript code into JShint | Warnings | [JShint Validator Results](/documentation/images/testing/jshint.jpg) | Warning related to ES6 versions. Web app not affected |
 
 ## Responsivity Testing
 
@@ -242,35 +242,35 @@ Further testing using the following tools:
 
 - Google Lighthouse (Desktop)
 
-![Performance Testing](/documentation/images/testing/performance.jpg)
+![Performance Testing](/documentation/images/testing/lighthouse/landing.jpg)
 
 | Page | Performance | Accessibility | Best Practices | SEO |
 | ---- | ----------- | ------------- | -------------- | --- |
-| Landing Page | 89% | 94% | 83% | 89% |
-| Registration Page | 100% | 93% | 83% | 89% |
-| Log-In Page | 100% | 93% | 83% | 89% |
-| Profile Page | 100% | 90% | 83% | 89% |
-| My Recipes Page | 95% | 85% | 83% | 80% |
-| Add a Recipe Page | 100% | 84% | 83% | 89% |
-| Edit Recipe Page | 100% | 84% | 83% | 89% |
-| Manage Categories Page | 96% | 80% | 83% | 80% |
-| Add a Category Page | 100% | 93% | 83% | 89% |
-| Edit Category Page | 100% | 93% | 83% | 89% |
+| Landing Page | 98% | 80% | 92% | 78% |
+| Sign-Up Page | 98% | 83% | 92% | 89% |
+| Sign-In Page | 99% | 83% | 92% | 89% |
+| Memberships Page | 99% | 80% | 92% | 78% |
+| Contact Us Page | 99% | 83% | 92% | 78% |
+| Gym Management Page | 98% | 75% | 92% | 78% |
+| My Memberships Page | 93% | 85% | 92% | 78% |
+| Membership Details Page | 96% | 75% | 92% | 80% |
+| Shopping Cart Page | 98% | 68% | 92% | 78% |
+| Checkout Page | 93% | 87% | 92% | 78% |
 
 - Google Lighthouse (Mobile)
 
 | Page | Performance | Accessibility | Best Practices | SEO |
 | ---- | ----------- | ------------- | -------------- | --- |
-| Landing Page | 73% | 90% | 83% | 91% |
-| Registration Page | 97% | 93% | 83% | 91% |
-| Log-In Page | 98% | 93% | 83% | 91% |
-| Profile Page | 97% | 90% | 83% | 91% |
-| My Recipes Page | 78% | 85% | 83% | 83% |
-| Add a Recipe Page | 96% | 84% | 83% | 89% |
-| Edit Recipe Page | 96% | 84% | 83% | 89% |
-| Manage Categories Page | 73% | 80% | 80% | 83% |
-| Add a Category Page | 97% | 93% | 83% | 91% |
-| Edit Category Page | 96% | 93% | 83% | 91% |
+| Landing Page | 81% | 82% | 92% | 82% |
+| Sign-Up Page | 88% | 83% | 92% | 91% |
+| Sign-In Page | 88% | 83% | 92% | 91% |
+| Memberships Page | 83% | 82% | 92% | 91% |
+| Contact Us Page | 87% | 83% | 92% | 91% |
+| Gym Management Page | 84% | 75% | 92% | 82% |
+| My Memberships Page | 82% | 85% | 92% | 82% |
+| Membership Details Page | 84% | 75% | 92% | 82% |
+| Shopping Cart Page | 82% | 68% | 92% | 72% |
+| Checkout Page | 76% | 87% | 92% | 82% |
 
 ## Security Testing
 
@@ -279,22 +279,21 @@ Testing security measures that are in place to improve user experience and confi
 | Test | Element | Desired Result | Actual Result | Google Chrome v 100.0.4896.88 | Edge v 100.0.1185.44 | Firefox v 99.0.1 (64-bit) |
 | ---- | ------- | -------------- | ------------- | ---------- | --------------- | ---------- |
 | 060 | Username Duplication | No username duplication allowed | Registration will check for username duplication. A flash message will warn the user if the username already exists | PASS | PASS | PASS |
-| 061 | Password security | Password is hashed | The password is converted into a complicated string or an algorithm | PASS | PASS | PASS |
 | 062 | Password confirmation | Checks for password match | When the password confirmation input matches the first password input, feedback validation is given and the user can register successfully | PASS | PASS | PASS |
-| 063 | Restricted access | Users are only able to edit or delete their own recipe | The *edit* and *delete* buttons are only visible to the user who created the recipe | PASS | PASS | PASS |
-| 064 | Admin access | Only the admin user can edit or delete categories | The *Manage Categories* link in the navbar is only visible to admin users | PASS | PASS | PASS |
+| 064 | Admin access | Only the admin user can add, edit or delete memberships | The *Gym Management* link in the navbar is only visible to admin users | PASS | PASS | PASS |
 
 ## Additional Testing
 
-I used the a11y Contrast Checker to test all colours throughout the project. As you can see there has been some problems detected regarding the grey/white contrast that runs throughout the website, as well as the pink/white that I used for the *Reset/Cancel* buttons. I am happy to leave these colours as they are as I want to create a soft, subtle look to the entire site. By changing this soft tone to something more contrasting and vibrant, I fear that the intended look will be lost. After further testing on different screens, I can confidently say that the grey text is easily read-able, and the buttons are highly visible, and are not at all lost in the  white background.
+I used the a11y Contrast Checker to test all colours throughout the project. As you can see there were no issues detected.
 
-![Colour Contrast Checker](/documentation/images/testing/colour-contrast.jpg)
+![Colour Contrast Checker](/documentation/images/testing/colour-checker1.jpg)
+![Colour Contrast Checker](/documentation/images/testing/colour-checker2.jpg)
 
 # Known Bugs & Fixes
 
 | Issue # | Bug | Description | Solution |
 | ------- | --- | ----------- | -------- |
-| 1 | White-space in text areas | When clicking on the text area for the *Ingredients* and *Method* I noticed there was some white space, which affected the validation feedback when filling in the form. | I remembered seeing this on the Code Institute tutorials as this was an issue that came up during a walkthrough project. I was able to follow this advice and get rid of the whitespace by using the closing tag `</textarea>` on the same line of the last line of text.
-| 2 | White-space on either side of Landing Page image (desktop only) | When viewing the web-app on a desktop, you can see there is a fair amount of white-space on either side of the image, as opposed to stretching across the entire screen. | No solution yet - I have researched on various forums and websites how to get rid of the unwanted white-space but have not yet found a solution that works as desired. I could inject the background image into the `<body>` element of the page,which will allow the image to fill the entire screen, however I don't want to use the background image across the entire site, only the landing page. |
+| 1 |  |  |
+| 2 |  |  |
 
 [Back to README.md file](README.md)
