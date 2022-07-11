@@ -348,17 +348,14 @@ The content of this website was created by Laura Jones. Snippets of code have be
 
 Much of the structure of this site follows what was taught during the Full Stack Frameworks With Django - Boutique Ado walkthrough project provided by Code Institute, but has been modified to suit my own full stack gym website.
 
+The layout and structure of the website has been created using Bootstrap's grid system and spacing attributes.
+
 | Code Snippet | Description | Source |
 | ------------- | ----------- | ------ |
-| Navbar |  Navbar element sits on the right with a responsive burger icon on smaller devices | [Materalizecss.com](https://materializecss.com/navbar.html) |
-| Footer | Footer content is spaced evenly using rows and columns, consisting of a *Sign-Up* section and social media links | [Materalizecss.com](https://materializecss.com/footer.html) |
-| Forms | Rows and colums are used to make the forms look organised and evenly spaced (Register, Log-In, Add/Edit Recipe and Add/Edit Categories) | [Materlizecss.com](https://materializecss.com/text-inputs.html) |
-| Cards | Cards are used in the Profile page (welcomes user), the Recipes page (each card stands for a different diet category and holds the relevant recipes), the Search bar and in the Manage Categories page | [Materializecss.com](https://materializecss.com/cards.html) |
-| Collapsible Recipes | Recipes drop down when they are clicked to keep the page looking organised | [Materializecss.com](https://materializecss.com/collapsible.html) |
-| Buttons | Buttons used throughout the site | [Materliazecss.com](https://materializecss.com/buttons.html) |
-| Python functions | The backend functionality structure was taught via the Code Institute Task Manager Project | [CI Task Manager Walkthrough Project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+DCP101+2017_T3/courseware/9e2f12f5584e48acb3c29e9b0d7cc4fe/054c3813e82e4195b5a4d8cd8a99ebaa/) |
-| Form Validation for Dropdown Input Box | Ensures form validation on the dropdown input field when using Materliaze | [CI Task Manager Walkthrough Project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+DCP101+2017_T3/courseware/9e2f12f5584e48acb3c29e9b0d7cc4fe/6449dcd23ca14016aa83dc7313d91a02/?child=first) |
-| 404 Page | Renders 404 Page through Python & Flask | [GeeksForGeeks.org](https://www.geeksforgeeks.org/python-404-error-handling-in-flask/) |
+| Navbar |  Navbar element sits on the right with a responsive burger icon on smaller devices | [Bootstrap](https://getbootstrap.com/docs/3.4/css/) |
+| Buttons | Buttons were created and styled partially using Bootstrap attributes alongside custom CSS | [Bootstrap](https://getbootstrap.com/docs/3.4/css/) |
+| Python functions | The backend functionality structure was taught via the Code Institute Boutique Ado Project | [CI Boutique Ado Walkthrough Project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FSF_102+Q1_2020/courseware/4201818c00aa4ba3a0dae243725f6e32/d3188bf68530497aa5fba55d07a9d7d7/) |
+| Django Framework | The Django Framework coding was taught via the Code Institute Boutique Ado Project | [CI Boutique Ado Walkthrough Project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FSF_102+Q1_2020/courseware/4201818c00aa4ba3a0dae243725f6e32/d3188bf68530497aa5fba55d07a9d7d7/) |
 
 | Imagery | Description | Source |
 | ------------- | ----------- | ------ |
@@ -369,7 +366,12 @@ Much of the structure of this site follows what was taught during the Full Stack
 
 - Code Institute - for the video tutorials and providing the knowledge for Django and how to use json fixtures.
 
-- Code Institute Tutors - .
+- Code Institute Tutors -
+    - Providing guidance when I was having issues with Stripe payments going through. I had not added the STRIPE_WH_SECRET to my Gitpod variables.
+
+    - After having lost some of the data from my memberships.json fixture, I was unsure on how to retrieve this information. I was given very useful guidance on how to use the `dumpdata` command to make a backup copy and retrieve the json file.
+
+    - Supporting me in making sure the contact form was sending the email query from the user into the terminal as the contact form is not sending live emails yet.
 
 - Code Institute Mentor, Spencer Barriball - for the fantastic, professional advice on what makes a good web developer.
 
