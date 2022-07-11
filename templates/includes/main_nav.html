@@ -1,19 +1,19 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto text-uppercase">
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown smaller">
             <a class="nav-link text-white font-weight-bold mr-5" href="{% url 'products' %}" id="our-sessions-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Memberships
             </a>
             <div class="dropdown-menu text-uppercase" aria-labelledby="our-sessions-link">
-                <a href="{% url 'products' %}?category=strength" class="dropdown-item">Strength & Conditioning</a>
-                <a href="{% url 'products' %}?category=hiit_fitness" class="dropdown-item">HIIT Fitness</a>
-                <a href="{% url 'products' %}?category=boxing" class="dropdown-item">Boxing</a>
-                <a href="{% url 'products' %}?category=boxing,hiit_fitness,strength" class="dropdown-item">All Memberships</a>
+                <a href="{% url 'products' %}?category=strength" class="dropdown-item font-small">Strength & Conditioning</a>
+                <a href="{% url 'products' %}?category=hiit_fitness" class="dropdown-item font-small">HIIT Fitness</a>
+                <a href="{% url 'products' %}?category=boxing" class="dropdown-item font-small">Boxing</a>
+                <a href="{% url 'products' %}?category=boxing,hiit_fitness,strength" class="dropdown-item font-small">All Memberships</a>
             </div>
         </li>
         <li>
-            <a href="{% url 'contact' %}" class="nav-link text-white font-weight-bold mr-5">Contact Us</a>
+            <a href="{% url 'contact' %}" class="nav-link text-white font-weight-bold mr-5 smaller">Contact Us</a>
         </li>
     </ul>
 </div>

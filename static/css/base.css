@@ -105,6 +105,14 @@ hr {
     color: #dddbdb;
 }
 
+.smaller {
+    font-size: smaller;
+}
+
+.font-small {
+    font-size: 15px;
+}
+
 /*-- Landing Page --*/
 
 .welcome-text {
