@@ -1,6 +1,6 @@
 # Portfolio Project 4 - Full Stack Frameworks with Django
 
-## LJ Fitness - [Live Site]()
+## LJ Fitness - [Live Site](https://project-4-ljfitness.herokuapp.com/)
 
 ## Business Objectives
 
@@ -84,7 +84,7 @@ I have chosen to use the font family of 'Open Sans', with a fallback font of 'sa
 
 ### Imagery
 
-Photographic imagery is used in some parts of the site, all images are sourced from [Pixabay](https://pixabay.com/photos/search/) and [Pexels.](https://www.pexels.com/)
+Photographic imagery is used in some parts of the site, all images are sourced from [Pexels.](https://www.pexels.com/)
 
 The landing page consists of a header, a background image, a welcome message and a footer. The chosen background image was selected because of its subtle tones and lack of contrast against the other elements, as I did not want to distract the site user away from the text.
 
@@ -286,7 +286,7 @@ All testing for this project can be found in the [TESTING.md file](TESTING.md).
 
 ## Deployment
 
-This project was created using Gitpod, which enabled me to stage and commit the files via Git (version control). All of the files necessary to run this website have been stored in a GitHub repository. The site was deployed using Heroku *(see below*).
+This project was created using Gitpod, which enabled me to stage and commit the files via Git (version control). All of the files necessary to run this website have been stored in a GitHub repository. The site was deployed using Heroku and AWS *(see below*).
 
 ### Forking the GitHub repository
 
@@ -315,25 +315,21 @@ As this is a full-stack website it has been deployed to Heroku.com using the fol
 
 ### Heroku Deployment
 
-1. In the *Resources* tab, select *Add-Ons* and search for *Heroku Postgres*. Click *Submit Order Form*.
-2. In the Gitpod terminal, type:
-    - `pip3 install dj_database_url`
-    - `pip3 install psycopg2-binary`
-    - ` pip3 freeze > requirements.txt `
-3. In *settings.py*, type `import dj_database_url` underneath `import os`.
-4. Still in *settings.py*, comment out the current `DATABASE` and underneath type `DATABASES = {
-    'default': dj_database_url.parse(url)
-}`
-5. Retrieve your config vars url from the Heroku settings and place in the url parameter in the previous step.
-6. In the terminal, make migrations using `python3 manage.py migrate`.
-7. Using fixtures, all product data is imported by typing the following:
-    - `python3 manage.py loaddata categories`
-    - `python3 manage.py loaddata memberships`
-8. Create a superuser log in - `python3 manage.py create superuser`.
-9. Remove the new `DATABASE` that was created in step 4, and uncomment the original `DATABASE`.
-10. Create an `if` statement in the `DATABASE` in *settings.py* which will connect to Postgres and otherwise, connect to sequel light.
-11. Install gunicorn - `pip3 install gunicorn`, and freeze that into the requirements.txt file - `pip3 freeze > requirements.txt`.
-12. Create a *Procfile* that will tell Heroku to create a web dyno, which will run gunicorn and serve our django app.
+Heroku and Amazon Web Services were used to deploy this project.
+
+The following links provide the steps that were followed for deployment, taken from the Code Institute Boutique Ado walkthrough project tutorials.
+
+1. [Creating a Heroku App](https://www.youtube.com/watch?v=6mv-Qp37X4I&ab_channel=MediaUpload)
+
+2. [Deploying to Heroku](https://www.youtube.com/watch?v=Tp2CU1qpgJo&feature=youtu.be&ab_channel=MediaUpload)
+
+3. [Creating an AWS Account](https://www.youtube.com/watch?v=uGdZeX319Q4&ab_channel=MediaUpload)
+
+4. [Creating AWS Groups, Policies and Users](https://www.youtube.com/watch?v=BzzjLvC0Fcc&ab_channel=MediaUpload)
+
+5. [Connecting Django to S3](https://www.youtube.com/watch?v=r-HJv_MyOqw&ab_channel=MediaUpload)
+
+6. [Caching, Media Files & Stripe](https://www.youtube.com/watch?v=JPb82nILolU&feature=youtu.be&ab_channel=MediaUpload)
 
 ### Enabling Automatic Deployment
 
@@ -370,8 +366,6 @@ The layout and structure of the website has been created using Bootstrap's grid 
     - Providing guidance when I was having issues with Stripe payments going through. I had not added the STRIPE_WH_SECRET to my Gitpod variables.
 
     - After having lost some of the data from my memberships.json fixture, I was unsure on how to retrieve this information. I was given very useful guidance on how to use the `dumpdata` command to make a backup copy and retrieve the json file.
-
-    - Supporting me in making sure the contact form was sending the email query from the user into the terminal as the contact form is not sending live emails yet.
 
 - Code Institute Mentor, Spencer Barriball - for the fantastic, professional advice on what makes a good web developer.
 
