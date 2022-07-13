@@ -27,7 +27,7 @@
         <div class="row">
             <div class="col-12">
                 <form action="{% url 'contact' %}" method="POST">
-                    <fieldset class="rounded text-center">
+                    <fieldset class="rounded">
                         {% csrf_token %}
                             {{ form.as_p }}
                     </fieldset>
