@@ -289,11 +289,19 @@ I used the a11y Contrast Checker to test all colours throughout the project. As 
 ![Colour Contrast Checker](/documentation/images/testing/colour-checker1.jpg)
 ![Colour Contrast Checker](/documentation/images/testing/colour-checker2.jpg)
 
-# Known Bugs & Fixes
+## Known Bugs & Fixes
 
 | Issue # | Bug | Description | Solution |
 | ------- | --- | ----------- | -------- |
-| 1 |  |  |
-| 2 |  |  |
+| 1 | Stripe payments failing | I had not added my STRIPE keys to the config vars in Heroku, therefore the payments were failing | Added STRIPE_PUBLIC_KEY and STRIPE_SECRET_KEY to config vars |
+| 2 | Checkout payments continuing to fail | I had not included the STRIPE_WH key in Heroku's config vars | Added STRIPE_WH key to config vars |
+| 3 | Memberships/products missing | Some products in the fixtures file had disappeared, the reason is unknown. | Used the `dumpdata` command to back up the json file |
+| 4 | Memberships not rendering or filtering correctly | After backing up the json file, some of the products were not filtering correctly | After inspecting the json file that had been copied and backed up, I could see that the pk (category) number on some products were wrong. I changed the numbers to match the required category so that the memberships could be filtered as intended |
+
+## Bugs Yet To Fix
+
+| Issue # | Bug | Description | Solution |
+| ------- | --- | ----------- | -------- |
+| 1 | Membership Details image not rendering | On the Heroku app, the image of a woman in the gym is not rendering. Image renders when viewing the site via Gitpod |
 
 [Back to README.md file](README.md)
